@@ -195,7 +195,7 @@ body {
       align-items:center;
     }
 
-    .info-pie .datos-infopie .datos-clases-pie .datos-horarios-pie .datos-derechos-pie {
+    .piepagina-contenedor footer, a, h2{
       flex-direction:column;
       align-items:center;
     }

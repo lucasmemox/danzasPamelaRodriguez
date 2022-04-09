@@ -116,15 +116,6 @@ body {
   height: 70px;
 }
 
-/* -- MOBILE -- */
-@media (max-width: 576px) {
-  /*ACÁ LE DIGO QUE CUANDO LA PANTALLA SEA MENOR A 576 LAS COSAS SE ACOMODEN DIFERENTE*/
-   .cabecera-nav header, nav, ul{
-      flex-direction:column;
-      align-items:center;
-    }
-  }
-
 .principal {
   grid-area: principal;
 
@@ -196,6 +187,19 @@ body {
   /*para los iconos del fab*/
 }
 
+/* -- MOBILE -- */
+@media (max-width: 576px) {
+  /*ACÁ LE DIGO QUE CUANDO LA PANTALLA SEA MENOR A 576 LAS COSAS SE ACOMODEN DIFERENTE*/
+   .cabecera-nav header, nav, ul{
+      flex-direction:column;
+      align-items:center;
+    }
+
+    .info-pie .datos-infopie .datos-clases-pie .datos-horarios-pie .datos-derechos-pie {
+      flex-direction:column;
+      align-items:center;
+    }
+  }
 
 .info-pie {
   grid-area: info-pie;

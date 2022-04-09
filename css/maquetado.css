@@ -74,7 +74,7 @@ body {
   /*alineo los objetos de la cabecera, el logo y el menu*/
 }
 
-.cabecera nav ul {
+.cabecera-nav nav ul {
   margin: 0;
   /*margen de cero */
   padding: 0;
@@ -84,13 +84,13 @@ body {
 }
 
 /*Elementos de lista dentro del ul*/
-.cabecera nav ul li {
+.cabecera-nav nav ul li {
   display: inline-block;
   /*Se va a mostrar el menu "horizontal"*/
 }
 
 /*Enlaces dentro de ul li*/
-.cabecera nav ul li a {
+.cabecera-nav nav ul li a {
   display: block;
   /*Se muestran como bloque*/
   padding: 0.5rem 1rem;
@@ -102,7 +102,7 @@ body {
 }
 
 /*Pasar el mouse sobre el menu de cabecera*/
-.cabecera nav ul li a:hover {
+.cabecera-nav nav ul li a:hover {
   background: rgb(232, 93, 178);
   /*color al pasar el mouse sobre el enlace*/
   transition: all 0.4s linear;
@@ -115,6 +115,15 @@ body {
   width: 140px;
   height: 70px;
 }
+
+/* -- MOBILE -- */
+@media (max-width: 576px) {
+  /*ACÁ LE DIGO QUE CUANDO LA PANTALLA SEA MENOR A 576 LAS COSAS SE ACOMODEN DIFERENTE*/
+   .cabecera-nav header, nav, ul{
+      flex-direction:column;
+      align-items:center;
+    }
+  }
 
 .principal {
   grid-area: principal;

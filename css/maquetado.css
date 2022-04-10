@@ -191,6 +191,7 @@ body {
 
 /* -- MOBILE -- */
 @media (max-width: 576px) {
+
   /*ACÁ LE DIGO QUE CUANDO LA PANTALLA SEA MENOR A 576 LAS COSAS SE ACOMODEN DIFERENTE*/
   .contenedor-grid {
     grid-template-areas:
@@ -201,6 +202,9 @@ body {
     /*Son 3 las columnas*/
     grid-template-rows: repeat(3, auto);
   }
+
+  /* -- TABLET -- */
+  @media (min-width: 576px) and (max-width: 992px) {}
 
   .piepagina-contenedor {
     grid-template-areas:
@@ -413,7 +417,35 @@ body {
 
 }
 
-.clases-principal h2 {
+.contenedor-principal {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap; /*Para que se posicionen abajo cuando no entran*/
+  flex-direction: row; /*pongo en fila*/
+  justify-content: space-evenly;/*trabaja a nivel de fila la separacion*/
+}
+
+.caja {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  line-height: 60px;
+  margin: 5px; /*Separo las cajas*/
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 20px;
+
+  cursor: pointer;
+}
+
+.cajaClases{
+  width: 100%;
+  height: 100px;
+ 
+}
+
+.cajaClases h2{
   margin-bottom: 30px;
   /*separo el h2 del contenido*/
   color: cornflowerblue;
@@ -425,6 +457,26 @@ body {
   text-align: center;
 
   text-shadow: 2px 2px rgb(176, 5, 155);
+}
+
+
+.img-clases:hover {
+  -webkit-transform: scale(1.3);
+   transform: scale(1.3);
+   -webkit-transition: all 5s;
+   transition: all 5s;
+   opacity: 0.8;
+}
+
+.img-clases{
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  border-color: antiquewhite;
+  border-style: solid;
+  border-width: 9px;
+  box-shadow: 5px 6px 7px 0px grey;
+
 }
 
 /*FOTOS HTML*/

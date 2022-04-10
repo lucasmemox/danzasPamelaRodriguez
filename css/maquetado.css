@@ -16,10 +16,11 @@ body {
   /* distancia entre lineas de Texto*/
   margin: 0;
   min-height: 100%;
-    /*background-color: white;*/
-  
+  /*background-color: white;*/
 
-  background: #D3CCE3;   /* fallback for old browsers */
+
+  background: #D3CCE3;
+  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #E9E4F0, #D3CCE3);
@@ -126,6 +127,7 @@ body {
   /*No repetir el fondo */
   background-attachment: fixed;
   /*Cuando hago scroll la imagen se queda fija*/
+  height: 100%;
 }
 
 
@@ -188,24 +190,29 @@ body {
 }
 
 /* -- MOBILE -- */
-@media (max-width: 576px) {  
-  /*ACÁ LE DIGO QUE CUANDO LA PANTALLA SEA MENOR A 576 LAS COSAS SE ACOMODEN DIFERENTE
-   .cabecera-nav header, nav, ul{
-      flex-direction:column;
-      align-items:center;
-    }*/
-    
-    .piepagina-contenedor{
-      grid-template-areas:
-    'info-pie'   
-    'clases-pie'
-    'horarios-pie'
-    'derechos-pie';
+@media (max-width: 576px) {
+  /*ACÁ LE DIGO QUE CUANDO LA PANTALLA SEA MENOR A 576 LAS COSAS SE ACOMODEN DIFERENTE*/
+  .contenedor-grid {
+    grid-template-areas:
+      'cabecera'
+      'principal'
+      'piepagina';
+    grid-template-columns: repeat(1, auto);
+    /*Son 3 las columnas*/
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .piepagina-contenedor {
+    grid-template-areas:
+      'info-pie'
+      'clases-pie'
+      'horarios-pie'
+      'derechos-pie';
     grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(4, auto);
-    }
-   
   }
+
+}
 
 .info-pie {
   grid-area: info-pie;
@@ -523,7 +530,7 @@ body {
   /* Centro la imagen */
   margin-top: 20px;
   /*Separo la imagen del Main*/
- 
+
 }
 
 .img-inscripcion2022 {
@@ -588,7 +595,7 @@ body {
   /* Centro la imagen */
   margin-top: 20px;
   /*Separo la imagen del Main*/
- 
+
 }
 
 .img-contacto {

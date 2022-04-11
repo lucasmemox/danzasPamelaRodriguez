@@ -423,6 +423,7 @@ body {
   display: flex;
   flex-wrap: wrap; /*Para que se posicionen abajo cuando no entran*/
   flex-direction: row; /*pongo en fila*/
+
   justify-content: space-evenly;/*trabaja a nivel de fila la separacion*/
 }
 
@@ -439,30 +440,59 @@ body {
   cursor: pointer;
 }
 
-.cajaClases{
+.encabezado{
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 100px;
- 
+  height: 200px;
+  margin-left: 400px;
+  margin-right: 200px;
+  margin-top: 10px;
+  
 }
 
-.cajaClases h2{
+.encabezado h2{
+  display: flex;
+  width: 500px;
+  height: 40px;
   margin-bottom: 30px;
   /*separo el h2 del contenido*/
   color: cornflowerblue;
   font-weight: 700;
   font-size: 3rem;
-  margin: 0 auto;
-  /* Centro */
   margin-top: 20px;
-  text-align: center;
+  justify-content:space-evenly;
+  /* Distribuir items uniformemente Los items tienen el mismo espacio a su alrededor */
+  align-items: center;
+  /*alineo los objetos de la cabecera, el logo y el menu*/
 
   text-shadow: 2px 2px rgb(176, 5, 155);
 }
 
-.cajaClases p {
-text-align: center;
-font-weight: 700;
-font-size: 3rem;
+.encabezado p{
+display: flex;
+width: 500px;
+height: 40px;  
+justify-content:space-evenly;
+  /* Distribuir items uniformemente Los items tienen el mismo espacio a su alrededor */
+align-items: center;
+  /*alineo los objetos de la cabecera, el logo y el menu*/
+
+border-radius: 8px;
+border-color: antiquewhite;
+border-style: solid;
+border-width: 8px;
+
+background: #3494E6;
+/* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #EC6EAD, #3494E6);
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: white;
+  font-weight: 700;
+  font-size: 3rem;
 }
 
 .img-clases:hover {

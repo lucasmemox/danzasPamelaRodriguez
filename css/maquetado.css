@@ -123,6 +123,12 @@ body {
   height: 24px;
 }
 
+.fondo-desplegable {
+  background-color: #278ce6 !important;
+  font-size: 1.5rem !important;
+
+}
+
 .principal {
   grid-area: principal;
 

@@ -232,6 +232,8 @@ body {
   .img-slide {
     height: 300px;
     width: 350px;
+    display: block; 
+    margin: 0px auto; /*para centrar la imagen en el slide*/
   }
 
 }

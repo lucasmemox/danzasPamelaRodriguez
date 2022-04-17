@@ -129,6 +129,11 @@ body {
 
 }
 
+.img-slide {
+  height: 500px;
+  width: 700px;
+}
+
 .principal {
   grid-area: principal;
 
@@ -222,6 +227,11 @@ body {
       'derechos-pie';
     grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(4, auto);
+  }
+
+  .img-slide {
+    height: 400px;
+    width: 500px;
   }
 
 }

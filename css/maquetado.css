@@ -135,20 +135,6 @@ body {
   width: 700px;
 }
 
-.principal {
-  grid-area: principal;
-
-  background-image: url("../imagenes/fondo1.png");
-  background-size: contain;
-  /*Mayor Tamaño posible sin estirarla, solo la recorta si la proporción no da */
-  background-repeat: no-repeat;
-  /*No repetir el fondo */
-  background-attachment: fixed;
-  /*Cuando hago scroll la imagen se queda fija*/
-  height: 100%;
-}
-
-
 .piepagina {
   grid-area: piepagina;
 
@@ -368,6 +354,107 @@ body {
 
 }
 
+/*INDEX*/
+
+.principal {
+  grid-area: principal;
+  margin: 0 auto;
+
+  /* background-image: url("../imagenes/fondo1.png");
+  background-size: contain;
+  Mayor Tamaño posible sin estirarla, solo la recorta si la proporción no da 
+  background-repeat: no-repeat;
+  No repetir el fondo 
+  background-attachment: fixed;
+  margin: 0 auto; */
+}
+
+.contenedor-index {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /*Para que se posicionen abajo cuando no entran*/
+  flex-direction: row;
+  /*pongo en fila*/
+
+  justify-content: space-evenly;
+  /*trabaja a nivel de fila la separación*/
+}
+
+.art-index {
+  margin: 0 auto;
+  display: flex;
+
+}
+
+.img-bcg-index{
+  height: 100vh;
+  min-height: 650px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.titulo {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.titulo-contenido {
+  transform: skewY(-12.5deg) scaleX(0.78) translateY(-10%);
+  color: #fff;
+  padding: 0px 30px;
+ 
+}
+
+.titulo-contenido h1 {
+  font-size: 15vw;
+  animation: fadeInBottom 0.25s 1s 1 forwards;
+  opacity: 0;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.titulo-contenido h2 {
+  font-size: 6vw;
+  animation: fadeInBottom 0.25s 1s 1 forwards;
+  opacity: 0;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeInBottom {
+  0% {
+    transform: translateY(500px);
+    opacity: 0;
+    filter: blur(1.5rem);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    filter: 0;
+  }
+
+}
+
+@keyframes fadeInTop {
+  0% {
+    transform: translateY(-500px);
+    opacity: 0;
+    filter: blur(1.5rem);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    filter: 0;
+  }
+
+}
 
 /* CONOCEME*/
 
@@ -475,22 +562,6 @@ body {
   color: black;
 
 }
-
-/*
-.clases-principal h2 {
-  margin-bottom: 30px;
-  
-  color: cornflowerblue;
-  font-weight: 700;
-  font-size: 3rem;
-  margin: 0 auto;
- 
-  margin-top: 20px;
-  text-align: center;
-
-  text-shadow: 2px 2px rgb(176, 5, 155);
-} 
-*/
 
 .contenedor-principal {
   width: 100%;

@@ -390,6 +390,8 @@ body {
   /* Centro la imagen */
   margin-top: 20px;
   /*Separo la imagen del Main*/
+  margin-bottom: 30px;
+  height: 300px;
 
   border-radius: 12px;
   border-color: antiquewhite;

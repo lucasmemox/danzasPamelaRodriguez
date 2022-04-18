@@ -209,6 +209,7 @@ body {
 
 /* -- MOBILE -- */
 @media (max-width: 576px) {
+
   /*ACÁ LE DIGO QUE CUANDO LA PANTALLA SEA MENOR A 576 LAS COSAS SE ACOMODEN DIFERENTE*/
   .contenedor-grid {
     grid-template-areas:
@@ -233,8 +234,43 @@ body {
   .img-slide {
     height: 300px;
     width: 350px;
-    display: block; 
-    margin: 0px auto; /*para centrar la imagen en el slide*/
+    display: block;
+    margin: 0px auto;
+    /*para centrar la imagen en el slide*/
+  }
+
+  .contenedor-principal {
+    width: 450px !important;
+  }
+
+  .caja {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    margin-top: 20px !important;
+  }
+
+  .encabezado {
+
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+
+  .encabezado h2 {
+
+    width: 400px;
+    margin-left: 20px !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .encabezado p {
+    width: 400px !important;
+    margin-left: 20px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-weight: 700;
+    font-size: 2.5rem !important;
+
   }
 
 }
@@ -440,18 +476,121 @@ body {
 
 }
 
+/*
 .clases-principal h2 {
+  margin-bottom: 30px;
+  
+  color: cornflowerblue;
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 0 auto;
+ 
+  margin-top: 20px;
+  text-align: center;
+
+  text-shadow: 2px 2px rgb(176, 5, 155);
+} 
+*/
+
+.contenedor-principal {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /*Para que se posicionen abajo cuando no entran*/
+  flex-direction: row;
+  /*pongo en fila*/
+
+  justify-content: space-evenly;
+  /*trabaja a nivel de fila la separacion*/
+}
+
+.caja {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  line-height: 60px;
+  margin: 5px;
+  /*Separo las cajas*/
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 20px;
+
+  cursor: pointer;
+}
+
+.encabezado {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  margin-left: 400px;
+  margin-right: 200px;
+  margin-top: 10px;
+
+}
+
+.encabezado h2 {
+  display: flex;
+  width: 500px;
+  height: 40px;
   margin-bottom: 30px;
   /*separo el h2 del contenido*/
   color: cornflowerblue;
   font-weight: 700;
   font-size: 3rem;
-  margin: 0 auto;
-  /* Centro */
   margin-top: 20px;
-  text-align: center;
+  justify-content: space-evenly;
+  /* Distribuir items uniformemente Los items tienen el mismo espacio a su alrededor */
+  align-items: center;
+  /*alineo los objetos de la cabecera, el logo y el menu*/
 
   text-shadow: 2px 2px rgb(176, 5, 155);
+}
+
+.encabezado p {
+  display: flex;
+  width: 500px;
+  height: 40px;
+  justify-content: space-evenly;
+  /* Distribuir items uniformemente Los items tienen el mismo espacio a su alrededor */
+  align-items: center;
+  /*alineo los objetos de la cabecera, el logo y el menu*/
+
+  border-radius: 8px;
+  border-color: antiquewhite;
+  border-style: solid;
+  border-width: 8px;
+
+  background: #3494E6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #EC6EAD, #3494E6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: white;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.img-clases:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: all 3s;
+  transition: all 3s;
+  opacity: 0.8;
+}
+
+.img-clases {
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  border-color: antiquewhite;
+  border-style: solid;
+  border-width: 9px;
+  box-shadow: 5px 6px 7px 0px grey;
+
 }
 
 /*FOTOS HTML*/
@@ -500,20 +639,21 @@ body {
 
   text-shadow: 2px 2px rgb(176, 5, 155);
 }
-.fotos-principal  p{
+
+.fotos-principal p {
   color: white;
   text-align: center;
 
   text-shadow: 2px 2px rgb(176, 5, 155);
 }
 
-.fotos-principal hr{
+.fotos-principal hr {
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 30px;
 }
 
-.fotos-principal p{
+.fotos-principal p {
   font-weight: 700;
   font-size: 3rem;
   margin: 0 auto;

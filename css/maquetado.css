@@ -414,7 +414,8 @@ body {
 
 .titulo-contenido {
   transform: skewY(-12.5deg) scaleX(0.78) translateY(-10%);
-  color: #fff;
+  /*color: #fff;*/
+  color: rgb( 241, 223, 219);
   padding: 0px 30px;
  
 }
@@ -423,14 +424,16 @@ body {
   font-size: 15vw;
   animation: fadeInBottom 0.25s 1s 1 forwards;
   opacity: 0;
-  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+/*  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);*/
+  text-shadow: 1px 1px rgb(176, 5, 155);
 }
 
 .titulo-contenido h2 {
   font-size: 6vw;
   animation: fadeInBottom 0.25s 1s 1 forwards;
   opacity: 0;
-  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+/*  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);*/
+  text-shadow: 1px 1px rgb(176, 5, 155);
 }
 
 @keyframes fadeInBottom {

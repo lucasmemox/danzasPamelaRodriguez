@@ -63,6 +63,7 @@ body {
   background: linear-gradient(to right, #EC6EAD, #3494E6);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-size: 1.7rem;
+  z-index: 100;
 }
 
 /*Defino la clase dentro del div que contiene el navegador*/
@@ -493,6 +494,12 @@ body {
   margin: 0 auto;
   /* Centro */
   margin-top: 20px;
+  text-align: center;
+
+  text-shadow: 2px 2px rgb(176, 5, 155);
+}
+.fotos-principal  p{
+  color: white;
   text-align: center;
 
   text-shadow: 2px 2px rgb(176, 5, 155);

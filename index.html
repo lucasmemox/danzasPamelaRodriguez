@@ -8,53 +8,130 @@
 
     <link rel="icon" href="./imagenes/favicon.ico">
     <link href="./css/maquetado.css" rel="stylesheet" type="text/css" />
+    <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4cee06ab99.js" crossorigin="anonymous"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"
-  />
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/funciones.js"></script>
     <title>Danzas Pamela Rodriguez</title>
 </head>
 
 <body class="body-index-fondo">
 
     <div class="contenedor-grid">
-        <div class="cabecera">
+        <div class="col-12 cabecera">
             <header>
-                <div class="cabecera-nav">
-                    <a href="./index.html"><img src="./imagenes/logoPamela.png" alt="Logo"
+                <div class="col-12 cabecera-nav">
+                    <a href="../index.html"><img src="./imagenes/logoPamela.png" alt="Logo"
                             title="Danzas Pamela Rodriguez" class="logo-imagen"></a>
-
-                    <nav>
-                        <ul>
-                            <li><a href="./index.html">Inicio</a></li>
-                            <li><a href="./paginas/conocenos.html">Conocemos</a></li>
-                            <li><a href="./paginas/clases.html">Clases</a></li>
-                            <li><a href="./paginas/fotos.html">Fotos</a></li>
-                            <li><a href="./paginas/inscripciones.html">Inscripción 2022</a></li>
-                            <li><a href="./paginas/contacto.html">Contáctenos</a></li>
-                        </ul>
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <!-- <span class="navbar-toggler-icon"></span> -->
+                                <span><img src="./iconos/hamburguesa.png" alt="Logo" class="logo-acordeon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page"
+                                            href="./paginas/conocenos.html">Conocenos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./paginas/fotos.html">Fotos</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Clases
+                                        </a>
+                                        <ul class="dropdown-menu fondo-desplegable" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Jazz</a></li>
+                                            <li><a class="dropdown-item" href="#">Folclore</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Clásico</a></li>
+                                            <li><a class="dropdown-item" href="#">Español</a></li>
+                                            <li><a class="dropdown-item" href="#">Ritmos Libres</a></li>
+                                            <li><a class="dropdown-item" href="#">Funcional</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./paginas/inscripciones.html">Inscripción 2022</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </nav>
                 </div>
             </header>
         </div>
 
         <div class="principal">
+            <main>
+                <div class="contenedor-index">
+                    <article class="art-index"><img class="img-bcg-index" src="./imagenes/fondo1.png">
+                        <div class="titulo">
+                            <div class="titulo-contenido">
+                                <h1>Danzas</h1>
+                                <h2>Pamela Rodriguez</h2>
+                            </div>
+                        </div>
+                    </article>
+                </div>
 
-            <div class="principal-filas">
-                <h1>Academia de Danzas</h1>
-                <div class="principal-columnas">
-                    <p>Lorem ipsum dolor sit amet, consectetur</p>
-                </div>    
-                <div class="principal-columnas">
-                    <p>Lorem ipsum dolor sit amet, consectetur</p>
-                </div>    
-                <div class="principal-columnas">
-                    <p>Lorem ipsum dolor sit amet, consectetur</p>
-                </div>    
- 
-            </div>
+                <div class="separador-index-clases">
+                    <div class="stage">
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                        <div class="layer"></div>
+                      </div>
+                </div>
+
+                <div class="contenedor-principal">
+                   
+                    <div class="caja clasico"><img class="img-clases" src="./imagenes/oferta/clasico.png"></div>
+
+                    <div class="caja folclore"><img class="img-clases" src="./imagenes/oferta/folclore.png"></div>
+
+                    <div class="caja espaniol"><img class="img-clases" src="./imagenes/oferta/español.png"></div>
+
+                    <div class="caja libres"><img class="img-clases" src="./imagenes/oferta/libres.png"></div>
+
+                    <div class="caja jazz"><img class="img-clases" src="./imagenes/oferta/Jazz.png"></div>
+
+                    <div class="caja funcional"><img class="img-clases" src="./imagenes/oferta/funcional.png"></div>
+                </div>
+            </main>
 
         </div>
+
         <div class="piepagina">
             <footer>
                 <div class="piepagina-contenedor">
@@ -107,6 +184,10 @@
             </footer>
         </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -8,53 +8,172 @@
 
     <link rel="icon" href="../imagenes/favicon.ico">
     <link href="../css/maquetado.css" rel="stylesheet" type="text/css" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4cee06ab99.js" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <title>Danzas Pamela Rodriguez</title>
 </head>
 
 <body>
     <div class="contenedor-fotos-grid">
 
-        <div class="cabecera">
+        <div class="col-12 cabecera">
             <header>
-                <div class="cabecera-nav">
+                <div class="col-12 cabecera-nav">
                     <a href="../index.html"><img src="../imagenes/logoPamela.png" alt="Logo"
                             title="Danzas Pamela Rodriguez" class="logo-imagen"></a>
-
-                    <nav>
-                        <ul>
-                            <li><a href="../index.html">Inicio</a></li>
-                            <li><a href="./conocenos.html">Conocemos</a></li>
-                            <li><a href="./clases.html">Clases</a></li>
-                            <li><a href="./fotos.html">Fotos</a></li>
-                            <li><a href="./inscripciones.html">Inscripción 2022</a></li>
-                            <li><a href="./contacto.html">Contáctenos</a></li>
-                        </ul>
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <!-- <span class="navbar-toggler-icon"></span> -->
+                                <span><img src="../iconos/hamburguesa.png" alt="Logo" class="logo-acordeon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page"
+                                            href="./conocenos.html">Conocenos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./fotos.html">Fotos</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Clases
+                                        </a>
+                                        <ul class="dropdown-menu fondo-desplegable" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Jazz</a></li>
+                                            <li><a class="dropdown-item" href="#">Folclore</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Clásico</a></li>
+                                            <li><a class="dropdown-item" href="#">Español</a></li>
+                                            <li><a class="dropdown-item" href="#">Ritmos Libres</a></li>
+                                            <li><a class="dropdown-item" href="#">Funcional</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./inscripciones.html">Inscripción 2022</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </nav>
                 </div>
             </header>
         </div>
 
         <div class="fotos-principal">
+
             <main>
                 <div class="galeriaFotosPrincipal">
-                    <h2>GALERÍA DE FOTOS</h1>
+                    <h2 data-aos="fade-left">GALERÍA DE FOTOS</h2>
                     <hr>
-                    <p>
+                    <p data-aos="fade-up">
                         Un Repaso de Nuestra Historia en Imágenes!!!
                     </p>
-                    <div class="div-galeriaFotos">
-                        <img src="../imagenes/galerias/01.jpeg" alt="Pamela">
-
-                        <img src="../imagenes/galerias/02.jpeg" alt="Pamela">
-
-                        <img src="../imagenes/galerias/03.jpeg" alt="Pamela">
-
-                        <img src="../imagenes/galerias/04.jpeg" alt="Pamela">
-
+                    <div id="carouselWithCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="0" class="active"
+                                aria-current="true"></li>
+                            <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="1" class=""></li>
+                            <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="2" class=""></li>
+                            <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="3" class=""></li>
+                            <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="4" class=""></li>
+                            <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="5" class=""></li>
+                            <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="6" class=""></li>
+                            <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="7" class=""></li>
+                            <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="8" class=""></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../imagenes/galerias/01.jpg" class="d-block img-slide" alt="Slide 1">
+                                <div class="carousel-caption d-none d-sm-block">
+                                    <h5>Danzas Pamela Rodriguez</h5>
+                                    <p>Baila Con tu Corazón y tus pies te seguirán.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagenes/galerias/02.jpg" class="d-block img-slide" alt="Slide 2">
+                                <div class="carousel-caption d-none d-sm-block">
+                                    <h5>Danzas Pamela Rodriguez</h5>
+                                    <p>La Danza es el Lenguaje Oculto del Alma.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagenes/galerias/03.jpg" class="d-block img-slide" alt="Slide 3">
+                                <div class="carousel-caption d-none d-sm-block">
+                                    <h5>Danzas Pamela Rodriguez</h5>
+                                    <p>Deberíamos considerar un dia perdido aquel que no hayamos bailado</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagenes/galerias/04.jpg" class="d-block img-slide" alt="Slide 4">
+                                <div class="carousel-caption d-none d-sm-block">
+                                    <h5>Danzas Pamela Rodriguez</h5>
+                                    <p>Baila Con tu Corazón y tus pies te seguirán.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagenes/galerias/05.jpg" class="d-block img-slide" alt="Slide 5">
+                                <div class="carousel-caption d-none d-sm-block">
+                                    <h5>Danzas Pamela Rodriguez</h5>
+                                    <p>La Danza es el Lenguaje Oculto del Alma.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagenes/galerias/06.jpg" class="d-block img-slide" alt="Slide 6">
+                                <div class="carousel-caption d-none d-sm-block">
+                                    <h5>Danzas Pamela Rodriguez</h5>
+                                    <p>Deberíamos considerar un dia perdido aquel que no hayamos bailado</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagenes/galerias/07.jpg" class="d-block img-slide" alt="Slide 7">
+                                <div class="carousel-caption d-none d-sm-block">
+                                    <h5>Danzas Pamela Rodriguez</h5>
+                                    <p>Baila Con tu Corazón y tus pies te seguirán.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagenes/galerias/08.jpg" class="d-block img-slide" alt="Slide 8">
+                                <div class="carousel-caption d-none d-sm-block">
+                                    <h5>Danzas Pamela Rodriguez</h5>
+                                    <p>La Danza es el Lenguaje Oculto del Alma.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagenes/galerias/09.jpg" class="d-block img-slide" alt="Slide 9">
+                                <div class="carousel-caption d-none d-sm-block">
+                                    <h5>Danzas Pamela Rodriguez</h5>
+                                    <p>Deberíamos considerar un dia perdido aquel que no hayamos bailado</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselWithCaptions" role="button"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselWithCaptions" role="button"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </a>
                     </div>
-
+                    <!--  -->
                 </div>
             </main>
         </div>
@@ -107,7 +226,10 @@
             </div>
         </div>
     </div>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

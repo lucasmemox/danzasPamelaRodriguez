@@ -14,8 +14,7 @@
   margin: 0 auto;
   /*0 arriba y abajo - y automático a los costados - me queda centrado*/
   color: black;
-  font-size: 1.5rem;
-  line-height: 1em; }
+  font-size: 1.5rem; }
   .conoceme-principal h2 {
     margin-bottom: 30px;
     /*separo el h2 del contenido*/
@@ -28,7 +27,23 @@
     text-align: center;
     text-shadow: 2px 2px #b0059b; }
   .conoceme-principal p {
+    line-height: 2em;
+    hyphens: auto;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align: left;
     /*Separación entre lineas de un párrafo*/ }
+  .conoceme-principal ul {
+    list-style-position: inside;
+    /*Los iconos de lista quedan dentro del li*/
+    margin: 0;
+    /*Elimino los espacios con margin y padding y saco el espacio del ul*/
+    padding: 0;
+    list-style-image: url("../iconos/zapatos2.png");
+    line-height: 2em; }
+    .conoceme-principal ul li {
+      text-align: left;
+      margin-left: 30px; }
 
 .cont-principal-conoceme {
   width: 100%;

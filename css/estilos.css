@@ -1,0 +1,54 @@
+@charset "UTF-8";
+.contenedor-conoceme-grid {
+  display: grid;
+  grid-template-areas: "cabecera cabecera cabecera" "conoceme conoceme conoceme" "piepagina piepagina piepagina";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 80px auto auto;
+  margin-top: 0px;
+  margin: 20px auto;
+  grid-gap: 10px; }
+
+.conoceme-principal {
+  grid-area: conoceme;
+  margin: 0 auto;
+  /*0 arriba y abajo - y automático a los costados - me queda centrado*/
+  color: black;
+  font-size: 1.5rem;
+  line-height: 1em; }
+  .conoceme-principal h2 {
+    margin-bottom: 30px;
+    /*separo el h2 del contenido*/
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0 auto;
+    /* Centro */
+    margin-top: 20px;
+    text-align: center;
+    text-shadow: 2px 2px #b0059b; }
+  .conoceme-principal p {
+    /*Separación entre lineas de un párrafo*/ }
+
+.cont-principal-conoceme {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /*Para que se posicionen abajo cuando no entran*/
+  flex-direction: row;
+  /*pongo en fila*/
+  justify-content: space-evenly;
+  /*trabaja a nivel de fila la separación*/ }
+
+.cuadricula {
+  width: 500px;
+  height: autopx;
+  text-align: center;
+  line-height: 60px;
+  margin: 5px;
+  /*Separo las cajas*/
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 20px;
+  cursor: pointer; }

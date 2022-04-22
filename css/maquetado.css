@@ -193,81 +193,6 @@ body {
   /*para los iconos del fab*/
 }
 
-/* -- MOBILE -- */
-@media (max-width: 576px) {
-
-  /*ACÁ LE DIGO QUE CUANDO LA PANTALLA SEA MENOR A 576 LAS COSAS SE ACOMODEN DIFERENTE*/
-  .contenedor-grid {
-    grid-template-areas:
-      'cabecera'
-      'principal'
-      'piepagina';
-    grid-template-columns: repeat(1, auto);
-    /*Son 3 las columnas*/
-    grid-template-rows: repeat(3, auto);
-  }
-
-  .piepagina-contenedor {
-    grid-template-areas:
-      'info-pie'
-      'clases-pie'
-      'horarios-pie'
-      'derechos-pie';
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(4, auto);
-  }
-
-  .img-slide {
-    height: 300px;
-    width: 350px;
-    display: block;
-    margin: 0px auto;
-    /*para centrar la imagen en el slide*/
-  }
-
-  .contenedor-principal {
-    width: 450px !important;
-  }
-
-  .caja {
-    margin-left: 20px !important;
-    margin-right: 20px !important;
-    margin-top: 20px !important;
-  }
-
-  .encabezado {
-
-    margin-left: 20px !important;
-    margin-right: 20px !important;
-  }
-
-  .encabezado h2 {
-
-    width: 400px;
-    margin-left: 20px !important;
-    justify-content: center !important;
-    align-items: center !important;
-  }
-
-  .encabezado p {
-    width: 400px !important;
-    margin-left: 20px !important;
-    justify-content: center !important;
-    align-items: center !important;
-    font-weight: 700;
-    font-size: 2.5rem !important;
-
-  }
-
-  .img-bcg-index {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    background-size: contain;
-  }
-}
-
 .info-pie {
   grid-area: info-pie;
   display: grid;
@@ -742,73 +667,73 @@ body {
 
 /* CONOCEME*/
 
-.contenedor-conoceme-grid {
+/* .contenedor-conoceme-grid {
   display: grid;
-  /*utilizo grid*/
+  utilizo grid
   grid-template-areas:
     'cabecera cabecera cabecera'
     'conoceme conoceme conoceme'
     'piepagina piepagina piepagina';
   grid-template-columns: repeat(3, 1fr);
-  /*Son 3 las columnas*/
+  Son 3 las columnas
   grid-template-rows: repeat(3, 1fr);
-  /*Son 3 las Filas*/
+  Son 3 las Filas
   grid-template-rows: 80px auto auto;
 
   margin-top: 0px;
-  /*Margen Superior 0*/
+  Margen Superior 0
   margin: 20px auto;
-  /*centro la pagina*/
+  centro la pagina
   grid-gap: 10px;
-  /*espaciado entre secciones*/
-}
+  espaciado entre secciones*
+} */
 
-.conoceme-principal {
+/* .conoceme-principal {
   grid-area: conoceme;
   margin: 0 auto;
-  /*0 arriba y abajo - y automático a los costados - me queda centrado*/
+  0 arriba y abajo - y automático a los costados - me queda centrado
   font-size: 1.5rem;
   line-height: 1.5em;
-  /*Separación entre lineas de un párrafo*/
+  Separación entre lineas de un párrafo
   color: black;
 
-}
+} */
 
-.conoceme-principal h2 {
+/* .conoceme-principal h2 {
   margin-bottom: 30px;
-  /*separo el h2 del contenido*/
+  separo el h2 del contenido
   color: white;
   font-weight: 700;
   font-size: 3rem;
   margin: 0 auto;
-  /* Centro */
+   Centro 
   margin-top: 20px;
   text-align: center;
 
   text-shadow: 2px 2px rgb(176, 5, 155);
-}
+} */
 
-.cont-principal-conoceme {
+/* .cont-principal-conoceme {
   width: 50%;
   height: auto;
   display: flex;
-  flex-wrap: wrap;/*Para que se posicionen abajo cuando no entran*/
+  flex-wrap: wrap;Para que se posicionen abajo cuando no entran
   
   flex-direction: row;
-  /*pongo en fila*/
+  pongo en fila
 
   justify-content: space-evenly;
-  /*trabaja a nivel de fila la separación*/
-}
+  trabaja a nivel de fila la separación
+} */
 
-.div-img-pamela {
+/* .div-img-pamela {
   display: flex;
-  width: 50%;  /* Sin ancho no puedo centrar la imagen */
-  height: auto;  /* Máximo ancho posible para el para la imagen */
+  width: 50%;   Sin ancho no puedo centrar la imagen 
+  height: auto;   Máximo ancho posible para el para la imagen 
   margin: 0 auto;
-  /* Centro la imagen */
+   Centro la imagen 
   margin-top: 20px;
-  /*Separo la imagen del Main*/
+  Separo la imagen del Main
   margin-bottom: 30px;
 
   border-radius: 12px;
@@ -822,7 +747,7 @@ body {
   height: 280px;
   width: 200px;
   align-self: center;
-}
+} */
 
 
 /*CLASES HTML*/
@@ -1057,3 +982,80 @@ body {
   width: 500px;
   align-self: center;
 }
+
+/* -- MOBILE -- */
+@media (max-width: 576px) {
+
+  /*ACÁ LE DIGO QUE CUANDO LA PANTALLA SEA MENOR A 576 LAS COSAS SE ACOMODEN DIFERENTE*/
+  .contenedor-grid {
+    grid-template-areas:
+      'cabecera'
+      'principal'
+      'piepagina';
+    grid-template-columns: repeat(1, auto);
+    /*Son 3 las columnas*/
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .piepagina-contenedor {
+    grid-template-areas:
+      'info-pie'
+      'clases-pie'
+      'horarios-pie'
+      'derechos-pie';
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(4, auto);
+  }
+
+  .img-slide {
+    height: 300px;
+    width: 350px;
+    display: block;
+    margin: 0px auto;
+    /*para centrar la imagen en el slide*/
+  }
+
+  .contenedor-principal {
+    width: 450px !important;
+  }
+
+  .caja {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    margin-top: 20px !important;
+  }
+
+  .encabezado {
+
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+
+  .encabezado h2 {
+
+    width: 400px;
+    margin-left: 20px !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .encabezado p {
+    width: 400px !important;
+    margin-left: 20px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-weight: 700;
+    font-size: 2.5rem !important;
+
+  }
+
+  .img-bcg-index {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-size: contain;
+  }
+}
+
+/*FIN MOBILE*/

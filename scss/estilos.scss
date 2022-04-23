@@ -1,3 +1,5 @@
+@import "separadorEnMovimiento";
+
 .contenedor-conoceme-grid {
   display: grid;
   // utilizo grid
@@ -26,19 +28,6 @@
   color: black;
   font-size: 1.5rem;
 
-  h2 {
-    margin-bottom: 30px;
-    /*separo el h2 del contenido*/
-    color: white;
-    font-weight: 700;
-    font-size: 3rem;
-    margin: 0 auto;
-    /* Centro */
-    margin-top: 20px;
-    text-align: center;
-
-    text-shadow: 2px 2px rgb(176, 5, 155);
-  }
   p{
     line-height: 2em;
     hyphens: auto;
@@ -74,9 +63,35 @@
   /*trabaja a nivel de fila la separación*/
 }
 
+.titulo-conoceme {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /*Para que se posicionen abajo cuando no entran*/
+  flex-direction: row;
+  /*pongo en fila*/
+
+  justify-content: space-evenly;
+  /*trabaja a nivel de fila la separación*/
+  h2 {
+    margin-bottom: 30px;
+    /*separo el h2 del contenido*/
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0 auto;
+    /* Centro */
+    margin-top: 20px;
+    text-align: center;
+
+    text-shadow: 2px 2px rgb(176, 5, 155);
+  }
+}
+
 .cuadricula {
   width: 500px;
-  height: autopx;
+  height: auto;
   text-align: center;
   line-height: 60px;
   margin: 5px;
@@ -87,3 +102,4 @@
 
   cursor: pointer;
 }
+

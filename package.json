@@ -1,12 +1,12 @@
-{
+{  
   "name": "danzas",
-  "version": "1.0.0",
   "description": "",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+      "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+      "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
@@ -305,4 +305,5 @@
     "yargs": "^17.4.1",
     "yargs-parser": "^20.2.9"
   }
+  
 }

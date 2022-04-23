@@ -28,22 +28,22 @@
   color: black;
   font-size: 1.5rem;
 
-  p{
+  p {
     line-height: 2em;
     hyphens: auto;
     word-wrap: break-word;
     word-break: break-word;
     text-align: left;
-  /*Separación entre lineas de un párrafo*/
+    /*Separación entre lineas de un párrafo*/
   }
 
-  ul{
+  ul {
     list-style-position: inside; /*Los iconos de lista quedan dentro del li*/
     margin: 0; /*Elimino los espacios con margin y padding y saco el espacio del ul*/
     padding: 0;
     list-style-image: url("../iconos/zapatos2.png");
     line-height: 2em;
-    li{
+    li {
       text-align: left;
       margin-left: 30px;
     }
@@ -54,8 +54,8 @@
   width: 100%;
   height: auto;
   display: flex;
-  flex-wrap: wrap;/*Para que se posicionen abajo cuando no entran*/
-  
+  flex-wrap: wrap; /*Para que se posicionen abajo cuando no entran*/
+
   flex-direction: row;
   /*pongo en fila*/
 
@@ -103,60 +103,64 @@
   cursor: pointer;
 }
 
-.imagen-conoceme{
+.imagen-conoceme {
   width: 400px;
   height: auto;
 }
 
 .div-img-pamela {
-  // display: flex;
-  width: 370px;   //Sin ancho no puedo centrar la imagen 
-  height: auto;   //Máximo ancho posible para el para la imagen 
-  margin: 0 auto; //     Centro la imagen 
-  margin-top: 20px;     //Separo la imagen
+  position: relative;
+  width: 390px; //Sin ancho no puedo centrar la imagen
+  height: 510px;
+  margin: 0 auto; //     Centro la imagen
+  margin-top: 20px; //Separo la imagen
   margin-bottom: 30px;
 
   border-radius: 12px;
   border-color: antiquewhite;
   border-style: solid;
-  border-width: 9px;
+  border-width: 4px;
   box-shadow: 5px 6px 7px 0px grey;
-  
+
   .img-pamela {
-    width: 350px;
+    width: 380px;
     height: 500px;
     align-self: center;
   }
-}
 
-.basic {
-  width: 200px;
-  height: 200px;
-  background: rgba(255,255,255,0.4);
-  position: relative;
-}
-.blur {
-  position: absolute;
-  bottom: 25px;
-  right: 200px;
-  width: 200px;
-  height: 100px;
-  background: rgba(255,255,255,0.4);
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
-  border: 1px solid rgba(255,255,255,0.2);
-  p {
-    margin-bottom: 30px;
-    /*separo el h2 del contenido*/
-    color: white;
-    font-weight: 700;
-    font-size: 3rem;
-    margin: 0 auto;
-    /* Centro */
-    margin-top: 20px;
-    text-align: center;
+  .blur {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    bottom: 25px;
+    right: 200px;
+    width: 200px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 
-    text-shadow: 2px 2px rgb(176, 5, 155);
+    p {
+      margin-bottom: 30px;
+      /*separo el h2 del contenido*/
+      color: white;
+      font-weight: 700;
+      font-size: 3rem;
+      margin: 0 auto;
+      /* Centro */
+      margin-top: 20px;
+      text-align: center;
+  
+      text-shadow: 2px 2px rgb(176, 5, 155);
+    }
+  }
+  .basic {
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.4);
+    position: relative;
   }
 }
+
 

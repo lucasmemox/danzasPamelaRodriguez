@@ -465,7 +465,7 @@ body {
 
 .titulo-contenido h1 {
   font-size: 15vw;
-  animation: fadeInBottom 0.25s 1s 1 forwards;
+  animation: fadeInTop 0.30s 1s 1 forwards;
   opacity: 0;
   /*  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);*/
   text-shadow: 1px 1px rgb(176, 5, 155);
@@ -473,7 +473,7 @@ body {
 
 .titulo-contenido h2 {
   font-size: 6vw;
-  animation: fadeInBottom 0.25s 1s 1 forwards;
+  animation: fadeInBottom 0.30s 1s 1 forwards;
   opacity: 0;
   /*  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);*/
   text-shadow: 1px 1px rgb(176, 5, 155);

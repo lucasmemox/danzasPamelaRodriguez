@@ -775,7 +775,7 @@ body {
   }
 
   .contenedor-principal {
-    width: 450px !important;
+    width: 550px !important;
   }
 
   .caja {
@@ -814,6 +814,10 @@ body {
     position: relative;
     overflow: hidden;
     background-size: contain;
+  }
+
+  .separador-index-clases{
+    width: 550px !important;
   }
 }
 

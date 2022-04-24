@@ -219,7 +219,7 @@
     width: 380px;
     height: 500px;
     align-self: center; }
-  .div-img-pamela .blur {
+  .div-img-pamela .vidrio {
     position: absolute;
     top: 40%;
     left: 20%;
@@ -231,7 +231,7 @@
     backdrop-filter: blur(10px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.2); }
-    .div-img-pamela .blur p {
+    .div-img-pamela .vidrio p {
       margin-bottom: 30px;
       /*separo el h2 del contenido*/
       color: white;
@@ -242,8 +242,3 @@
       margin-top: 20px;
       text-align: center;
       text-shadow: 2px 2px #b0059b; }
-  .div-img-pamela .basic {
-    width: 200px;
-    height: 200px;
-    background: rgba(255, 255, 255, 0.4);
-    position: relative; }

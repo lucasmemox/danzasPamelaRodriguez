@@ -774,9 +774,9 @@ body {
     /*para centrar la imagen en el slide*/
   }
 
-  .contenedor-principal {
+  /* .contenedor-principal {
     width: 550px !important;
-  }
+  } */
 
   .caja {
     margin-left: 20px !important;
@@ -816,9 +816,9 @@ body {
     background-size: contain;
   }
 
-  .separador-index-clases{
+  /* .separador-index-clases{
     width: 550px !important;
-  }
+  } */
 }
 
 /*FIN MOBILE*/

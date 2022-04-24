@@ -119,6 +119,51 @@
     transform: rotateY(-40deg) rotateX(-43deg); } }
 
 /*FIn maquetado Texto INDEX*/
+/* -- MOBILE -- */
+@media (max-width: 576px) {
+  /*ACÁ LE DIGO QUE CUANDO LA PANTALLA SEA MENOR A 576 LAS COSAS SE ACOMODEN DIFERENTE*/
+  .contenedor-grid {
+    grid-template-areas: 'cabecera' 'principal' 'piepagina';
+    grid-template-columns: repeat(1, auto);
+    /*Son 3 las columnas*/
+    grid-template-rows: repeat(3, auto); }
+  .piepagina-contenedor {
+    grid-template-areas: 'info-pie' 'clases-pie' 'horarios-pie' 'derechos-pie';
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(4, auto); }
+  .img-slide {
+    height: 300px;
+    width: 350px;
+    display: block;
+    margin: 0px auto;
+    /*para centrar la imagen en el slide*/ }
+  .caja {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    margin-top: 20px !important; }
+  .encabezado {
+    margin-left: 20px !important;
+    margin-right: 20px !important; }
+  .encabezado h2 {
+    width: 400px;
+    margin-left: 20px !important;
+    justify-content: center !important;
+    align-items: center !important; }
+  .encabezado p {
+    width: 400px !important;
+    margin-left: 20px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-weight: 700;
+    font-size: 2.5rem !important; }
+  .img-bcg-index {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-size: contain; } }
+
+/*FIN MOBILE*/
 .contenedor-conoceme-grid {
   display: grid;
   grid-template-areas: "cabecera cabecera cabecera" "conoceme conoceme conoceme" "piepagina piepagina piepagina";
@@ -173,6 +218,7 @@
   /*Para que se posicionen abajo cuando no entran*/
   flex-direction: row;
   /*pongo en fila*/
+  position: relative;
   justify-content: space-evenly;
   /*trabaja a nivel de fila la separación*/ }
   .titulo-conoceme h2 {

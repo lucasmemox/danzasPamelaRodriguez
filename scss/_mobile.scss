@@ -1,12 +1,11 @@
 /* -- MOBILE -- */
 @media (max-width: 576px) {
-
   /*ACÁ LE DIGO QUE CUANDO LA PANTALLA SEA MENOR A 576 LAS COSAS SE ACOMODEN DIFERENTE*/
   .contenedor-grid {
     grid-template-areas:
-      'cabecera'
-      'principal'
-      'piepagina';
+      "cabecera"
+      "principal"
+      "piepagina";
     grid-template-columns: repeat(1, auto);
     /*Son 3 las columnas*/
     grid-template-rows: repeat(3, auto);
@@ -14,10 +13,10 @@
 
   .piepagina-contenedor {
     grid-template-areas:
-      'info-pie'
-      'clases-pie'
-      'horarios-pie'
-      'derechos-pie';
+      "info-pie"
+      "clases-pie"
+      "horarios-pie"
+      "derechos-pie";
     grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(4, auto);
   }
@@ -37,13 +36,11 @@
   }
 
   .encabezado {
-
     margin-left: 20px !important;
     margin-right: 20px !important;
   }
 
   .encabezado h2 {
-
     width: 400px;
     margin-left: 20px !important;
     justify-content: center !important;
@@ -57,7 +54,6 @@
     align-items: center !important;
     font-weight: 700;
     font-size: 2.5rem !important;
-
   }
 
   .img-bcg-index {
@@ -67,6 +63,22 @@
     overflow: hidden;
     background-size: contain;
   }
+
+  .imagen-conoceme {
+    width: 330px;
+    height: auto;
+  }
+
+  .div-img-pamela {
+    position: relative;
+    width: 320px; //Sin ancho no puedo centrar la imagen
+    height: 450px;
+  }
+
+  .img-pamela {
+    width: 320px;
+    height: 450px;
+    align-self: center;
+  }
 }
 
-/*FIN MOBILE*/

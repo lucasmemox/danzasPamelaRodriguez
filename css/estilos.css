@@ -123,12 +123,12 @@
 @media (max-width: 576px) {
   /*ACÁ LE DIGO QUE CUANDO LA PANTALLA SEA MENOR A 576 LAS COSAS SE ACOMODEN DIFERENTE*/
   .contenedor-grid {
-    grid-template-areas: 'cabecera' 'principal' 'piepagina';
+    grid-template-areas: "cabecera" "principal" "piepagina";
     grid-template-columns: repeat(1, auto);
     /*Son 3 las columnas*/
     grid-template-rows: repeat(3, auto); }
   .piepagina-contenedor {
-    grid-template-areas: 'info-pie' 'clases-pie' 'horarios-pie' 'derechos-pie';
+    grid-template-areas: "info-pie" "clases-pie" "horarios-pie" "derechos-pie";
     grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(4, auto); }
   .img-slide {
@@ -161,9 +161,19 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    background-size: contain; } }
+    background-size: contain; }
+  .imagen-conoceme {
+    width: 330px;
+    height: auto; }
+  .div-img-pamela {
+    position: relative;
+    width: 320px;
+    height: 450px; }
+  .img-pamela {
+    width: 320px;
+    height: 450px;
+    align-self: center; } }
 
-/*FIN MOBILE*/
 .contenedor-conoceme-grid {
   display: grid;
   grid-template-areas: "cabecera cabecera cabecera" "conoceme conoceme conoceme" "piepagina piepagina piepagina";

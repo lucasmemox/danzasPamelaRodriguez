@@ -119,6 +119,18 @@
     transform: rotateY(-40deg) rotateX(-43deg); } }
 
 /*FIn maquetado Texto INDEX*/
+.elemento--primario {
+  color: #1a0b6b; }
+
+.elemento--secundario {
+  color: #0ccc46; }
+
+.elemento--hecho {
+  color: #28c028; }
+
+.elemento--peligro {
+  color: #e72f38; }
+
 /* -- MOBILE -- */
 @media (max-width: 576px) {
   /*ACÁ LE DIGO QUE CUANDO LA PANTALLA SEA MENOR A 576 LAS COSAS SE ACOMODEN DIFERENTE*/

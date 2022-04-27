@@ -64,19 +64,24 @@
     background-size: contain;
   }
 
+  .conoceme-principal {
+    li {
+      margin-left: 0px;
+    }
+  }
   .imagen-conoceme {
-    width: 330px;
+    width: 330px !important;
     height: auto;
   }
 
   .div-img-pamela {
     position: relative;
-    width: 320px; //Sin ancho no puedo centrar la imagen
+    width: 320px !important; //Sin ancho no puedo centrar la imagen
     height: 450px;
   }
 
   .img-pamela {
-    width: 320px;
+    width: 310px !important;
     height: 450px;
     align-self: center;
   }

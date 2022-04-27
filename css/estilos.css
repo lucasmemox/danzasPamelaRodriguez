@@ -1,8 +1,108 @@
 @charset "UTF-8";
-/*Texto MAquetado*/
+/*INSCRIPCION HTML*/
 @import url("//fonts.googleapis.com/css?family=Pacifico&text=Pure");
 @import url("//fonts.googleapis.com/css?family=Roboto:700&text=css");
 @import url("//fonts.googleapis.com/css?family=Kaushan+Script&text=!");
+.contenedor-inscripcion-grid {
+  display: grid;
+  /*utilizo grid*/
+  grid-template-areas: "cabecera cabecera cabecera" "inscripcion    inscripcion    inscripcion" "piepagina piepagina piepagina";
+  grid-template-columns: repeat(3, 1fr);
+  /*Son 3 las columnas*/
+  grid-template-rows: repeat(3, 1fr);
+  /*Son 3 las Filas*/
+  grid-template-rows: 80px auto auto;
+  margin-top: 0px;
+  /*Margen Superior 0*/
+  margin: 20px auto;
+  /*centro la pagina*/
+  grid-gap: 10px;
+  /*espaciado entre secciones*/ }
+
+.inscripcion-principal {
+  grid-area: inscripcion;
+  margin: 0 auto;
+  /*0 arriba y abajo - y automático a los costados - me queda centrado*/
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  /*Separación entre lineas de un párrafo*/
+  color: black; }
+
+.inscripcion-principal h2 {
+  margin-bottom: 30px;
+  /*separo el h2 del contenido*/
+  color: cornflowerblue;
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 0 auto;
+  /* Centro */
+  margin-top: 20px;
+  text-align: center;
+  text-shadow: 2px 2px #b0059b; }
+
+.div-imagen-inscripcion {
+  width: 200%;
+  /* Sin ancho no puedo centrar la imagen */
+  max-width: 500px;
+  /* Máximo ancho posible para el para la imagen */
+  margin: 0 auto;
+  /* Centro la imagen */
+  margin-top: 20px;
+  /*Separo la imagen del Main*/ }
+
+.img-inscripcion2022 {
+  height: 200px;
+  width: 500px;
+  align-self: center; }
+
+.div-form-inscripcion {
+  width: 300%;
+  /* Sin ancho no puedo centrar el formulario */
+  max-width: 600px;
+  /* Máximo ancho posible para el formulario */
+  margin: 0 auto;
+  /* Centro el formulario */
+  display: flex;
+  flex-direction: column;
+  /*  los elementos se ordenan en el eje vertical */
+  justify-content: center;
+  /* justifica la caja al centro */
+  align-items: center;
+  /* Centrado Para justificar el contenido, según su contenido dentro del contenedor, no todas ocuparan lo mismo */ }
+
+.form-inscripcion {
+  background-color: violet;
+  padding: 3px;
+  /* separamos los bordes del form del resto de elementos */
+  border-radius: 10px;
+  /* Redondeo los bordes del formulario */ }
+  .form-inscripcion input,
+  .form-inscripcion textarea {
+    padding: 5px;
+    /* Separamos la letra del interior (contenido) en los inputs de los bordes */
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 10px; }
+  .form-inscripcion label {
+    display: inline-block;
+    /* Alineo los label con respecto a los imputs*/
+    width: 80px;
+    /* Distancia entre label e imputs en este caso*/ }
+  .form-inscripcion button {
+    margin-top: 20px;
+    /* Hago margen individual para el contenedor del botón */
+    width: 40%;
+    margin-left: 30%;
+    background-color: #e72f38;
+    color: blue;
+    border-radius: 10px; }
+  .form-inscripcion fieldset {
+    border-radius: 10px; }
+  .form-inscripcion legend,
+  .form-inscripcion h3 {
+    margin-left: 30%; }
+
+/*Texto MAquetado*/
 .stage {
   height: 200px;
   width: 300px;
@@ -119,18 +219,6 @@
     transform: rotateY(-40deg) rotateX(-43deg); } }
 
 /*FIn maquetado Texto INDEX*/
-.elemento--primario {
-  color: #1a0b6b; }
-
-.elemento--secundario {
-  color: #0ccc46; }
-
-.elemento--hecho {
-  color: #28c028; }
-
-.elemento--peligro {
-  color: #e72f38; }
-
 /* -- MOBILE -- */
 @media (max-width: 576px) {
   /*ACÁ LE DIGO QUE CUANDO LA PANTALLA SEA MENOR A 576 LAS COSAS SE ACOMODEN DIFERENTE*/

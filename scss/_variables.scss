@@ -6,9 +6,4 @@ $paletas: (
    'secundario': rgb(12,204,70),
    'hecho': rgb(40,192,40),
    'peligro': rgb(231,47,56)
-
 );
-
-@each $nombreBoton, $colorBoton in $paletas {
-    @include button($nombreBoton, $nombreBoton);
-}

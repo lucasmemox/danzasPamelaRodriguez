@@ -163,7 +163,7 @@
     overflow: hidden;
     background-size: contain; }
   .conoceme-principal li {
-    margin-left: 0px; }
+    margin-left: 0px !important; }
   .imagen-conoceme {
     width: 330px !important;
     height: auto; }

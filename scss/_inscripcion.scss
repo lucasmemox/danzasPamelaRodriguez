@@ -109,7 +109,7 @@
     /* Hago margen individual para el contenedor del botón */
     width: 40%;
     margin-left: 30%;
-    background-color: rgb(176, 5, 155);
+    background-color: map-get($map: $paletas, $key: 'peligro');
     color:blue;
     border-radius: 10px;
   }radialGradient

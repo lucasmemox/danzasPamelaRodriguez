@@ -112,6 +112,20 @@
     z-index: 5;
     transition: all 0.3s ease;
 
+    .form-titulo {
+      color: #fff !important;
+      font-size: 1.7em !important;
+      text-align: center !important;
+      position: relative;
+
+      span {
+        color: rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+      }
+    }
+
     &.slide-up {
       top: 5%;
       transform: translate(-50%, 0%);
@@ -135,19 +149,7 @@
       visibility: visible;
       transition: all 0.3s ease;
     }
-
-    .form-titulo {
-      color: #fff !important;
-      font-size: 1.7em !important;
-      text-align: center !important;
-
-      span {
-        color: rgba(0, 0, 0, 0.4);
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease;
-      }
-    }
+  
 
     .form-principal-inscripcion {
       border-radius: 15px;
@@ -179,7 +181,7 @@
       }
 
       option, select {
-         @extend input;
+         @extend input; /*Extiendo los valores del input*/
       }
     }
 
@@ -198,6 +200,7 @@
       opacity: 1;
       visibility: visible;
       transition: all 0.3s ease;
+      transform: translateX( 5%);
 
       &:hover {
         transition: all 0.3s ease;

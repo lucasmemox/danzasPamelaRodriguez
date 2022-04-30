@@ -98,6 +98,16 @@
     width: 65%;
     z-index: 5;
     transition: all 0.3s ease; }
+    .form-inscribite .inscripcion .form-titulo {
+      color: #fff !important;
+      font-size: 1.7em !important;
+      text-align: center !important;
+      position: relative; }
+      .form-inscribite .inscripcion .form-titulo span {
+        color: rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease; }
     .form-inscribite .inscripcion.slide-up {
       top: 5%;
       transform: translate(-50%, 0%);
@@ -114,15 +124,6 @@
       opacity: 1;
       visibility: visible;
       transition: all 0.3s ease; }
-    .form-inscribite .inscripcion .form-titulo {
-      color: #fff !important;
-      font-size: 1.7em !important;
-      text-align: center !important; }
-      .form-inscribite .inscripcion .form-titulo span {
-        color: rgba(0, 0, 0, 0.4);
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease; }
     .form-inscribite .inscripcion .form-principal-inscripcion {
       border-radius: 15px;
       background-color: transparent;
@@ -146,6 +147,8 @@
         border-color: #f4f7f6;
         background-color: #dddedd;
         margin-bottom: 3px; }
+      .form-inscribite .inscripcion .form-principal-inscripcion option, .form-inscribite .inscripcion .form-principal-inscripcion select {
+        /*Extiendo los valores del input*/ }
     .form-inscribite .inscripcion .inscribirse-btn {
       background-color: rgba(0, 0, 0, 0.4);
       color: rgba(255, 255, 255, 0.7);
@@ -160,7 +163,8 @@
       cursor: pointer;
       opacity: 1;
       visibility: visible;
-      transition: all 0.3s ease; }
+      transition: all 0.3s ease;
+      transform: translateX(5%); }
       .form-inscribite .inscripcion .inscribirse-btn:hover {
         transition: all 0.3s ease;
         background-color: rgba(0, 0, 0, 0.8); }

@@ -83,13 +83,34 @@
   .img-pamela {
     width: 310px !important;
     height: 450px;
-    align-self: center;
+    align-self: center !important;
   }
 
   .img-inscripcion2022 {
     height: 150px;
     width: 300px;
-    align-self: center;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .div-form-inscripcion {
+    width: 380px;
+    /* Sin ancho no puedo centrar el formulario */
+    max-width: 380px;
+    /* Máximo ancho posible para el formulario */
+    margin: 0 auto;
+    /* Centro el formulario */
+  }
+  
+  .form-inscribite {
+    background-color: #222;
+    border-radius: 15px;
+    height: 550px;
+    width: 370px;
+    position: relative;
+    overflow: hidden;
+
   }
 }
 

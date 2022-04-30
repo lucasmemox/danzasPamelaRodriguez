@@ -30,20 +30,24 @@
   line-height: 1.5em;
   /*Separación entre lineas de un párrafo*/
   color: black;
-}
 
-.inscripcion-principal h2 {
-  margin-bottom: 30px;
-  /*separo el h2 del contenido*/
-  color: cornflowerblue;
-  font-weight: 700;
-  font-size: 3rem;
-  margin: 0 auto;
-  /* Centro */
-  margin-top: 20px;
-  text-align: center;
+  h2 {
+    margin-bottom: 30px;
+    /*separo el h2 del contenido*/
+    color: cornflowerblue;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0 auto;
+    /* Centro */
+    margin-top: 20px;
+    text-align: center;
+  
+    text-shadow: 2px 2px rgb(176, 5, 155);
+  }
 
-  text-shadow: 2px 2px rgb(176, 5, 155);
+  p {
+    color: red;
+  }
 }
 
 .div-imagen-inscripcion {
@@ -63,6 +67,8 @@
   align-self: center;
 }
 
+/*Formulario*/
+
 .div-form-inscripcion {
   width: 300%;
   /* Sin ancho no puedo centrar el formulario */
@@ -78,8 +84,6 @@
   align-items: center;
   /* Centrado Para justificar el contenido, según su contenido dentro del contenedor, no todas ocuparan lo mismo */
 }
-
-/*Formulario*/
 
 .form-inscribite {
   background-color: #222;

@@ -38,3 +38,19 @@ $paletas: (
     justify-content: space-evenly;
     /*trabaja a nivel de fila la separación*/
    }
+
+   @mixin formFlex {
+    width: 500px;
+    /* Sin ancho no puedo centrar el formulario */
+    max-width: 500px;
+    /* Máximo ancho posible para el formulario */
+    margin: 0 auto;
+    /* Centro el formulario */
+    display: flex;
+    flex-direction: column;
+    /*  los elementos se ordenan en el eje vertical */
+    justify-content: center;
+    /* justifica la caja al centro */
+    align-items: center;
+    /* Centrado Para justificar el contenido, según su contenido dentro del contenedor, no todas ocuparan lo mismo */
+   }

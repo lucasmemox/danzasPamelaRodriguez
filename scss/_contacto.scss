@@ -97,23 +97,13 @@
   align-self: center;
 }
 
-.div-form-consulta {
-  width: 300%;
-  /* Sin ancho no puedo centrar el formulario */
-  max-width: 600px;
-  /* Máximo ancho posible para el formulario */
-  margin: 0 auto;
-  /* Centro el formulario */
-  display: flex;
-  flex-direction: column;
-  /*  los elementos se ordenan en el eje vertical */
-  justify-content: center;
-  /* justifica la caja al centro */
-  align-items: center;
-  /* Centrado Para justificar el contenido, según su contenido dentro del contenedor, no todas ocuparan lo mismo */
+.div-form-contacto {
+  
+    @include formFlex;
+  
 }
 
-.form-consulta {
+.form-contacto {
   background-color: #222;
   border-radius: 15px;
   width: 500px;
@@ -132,7 +122,7 @@
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 100% 100%;
-    background-image: url("../imagenes/fondoInscripcion.png");
+    background-image: url("../imagenes/fondoContacto.png");
   }
 }
 

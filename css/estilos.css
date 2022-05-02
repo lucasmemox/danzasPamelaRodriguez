@@ -805,7 +805,7 @@ body {
 .contenedor-contacto-grid {
   display: grid;
   /*utilizo grid*/
-  grid-template-areas: 'cabecera cabecera cabecera' 'contacto    contacto    contacto' 'piepagina piepagina piepagina';
+  grid-template-areas: "cabecera cabecera cabecera" "contacto    contacto    contacto" "piepagina piepagina piepagina";
   grid-template-columns: repeat(3, 1fr);
   /*Son 3 las columnas*/
   grid-template-rows: repeat(3, 1fr);
@@ -838,6 +838,62 @@ body {
     text-align: center;
     text-shadow: 2px 2px #b0059b; }
 
+.cont-principal-conoceme {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /*Para que se posicionen abajo cuando no entran*/
+  flex-direction: row;
+  /*pongo en fila*/
+  justify-content: space-evenly;
+  /*trabaja a nivel de fila la separación*/ }
+
+.contacto-banner {
+  width: 400px;
+  height: auto;
+  text-align: center;
+  line-height: 60px;
+  margin: 5px;
+  /*Separo las cajas*/
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  cursor: pointer; }
+
+.mapa-contacto {
+  width: 600px;
+  height: auto;
+  text-align: center;
+  line-height: 60px;
+  margin: 5px;
+  /*Separo las cajas*/
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  cursor: pointer; }
+
+.maquetadoBanner {
+  padding: 2px;
+  text-align: left !important;
+  margin-left: 20px; }
+  .maquetadoBanner h3 {
+    margin-top: 4px !important;
+    margin-bottom: 5px !important; }
+  .maquetadoBanner a {
+    margin-top: 2px;
+    margin-bottom: 5px;
+    /*separo el h2 del contenido*/
+    color: #666463;
+    font-weight: 600;
+    text-decoration: none;
+    /*Que los enlaces no estén subrayados*/ }
+    .maquetadoBanner a a:hover {
+      opacity: 0.8; }
+      .maquetadoBanner a a:hover a .fa-brands .fa-solid {
+        font-size: 20px;
+        /*para los iconos del fab*/ }
+
 .div-imagen-contacto {
   width: 200%;
   /* Sin ancho no puedo centrar la imagen */
@@ -852,6 +908,41 @@ body {
   height: 200px;
   width: 500px;
   align-self: center; }
+
+.div-form-consulta {
+  width: 300%;
+  /* Sin ancho no puedo centrar el formulario */
+  max-width: 600px;
+  /* Máximo ancho posible para el formulario */
+  margin: 0 auto;
+  /* Centro el formulario */
+  display: flex;
+  flex-direction: column;
+  /*  los elementos se ordenan en el eje vertical */
+  justify-content: center;
+  /* justifica la caja al centro */
+  align-items: center;
+  /* Centrado Para justificar el contenido, según su contenido dentro del contenedor, no todas ocuparan lo mismo */ }
+
+.form-consulta {
+  background-color: #222;
+  border-radius: 15px;
+  width: 500px;
+  height: 600px;
+  position: relative;
+  overflow: hidden; }
+  .form-consulta::after {
+    content: "";
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 100% 100%;
+    background-image: url("../imagenes/fondoInscripcion.png"); }
 
 /*Texto MAquetado*/
 .stage {

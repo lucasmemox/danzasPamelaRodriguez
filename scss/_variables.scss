@@ -10,3 +10,31 @@ $paletas: (
    'formulario': rgb(244, 247, 246 ),
    'transparente': transparent,
 );
+
+
+@mixin recuadros($largo) {
+   width: $largo;  
+   height: auto;
+   text-align: center;
+   line-height: 60px;
+   margin: 5px;
+   /*Separo las cajas*/
+   margin-left: 50px;
+   margin-right: 50px;
+   margin-top: 20px;
+   cursor: pointer;
+}
+
+@mixin flexDivision {
+  
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap; /*Para que se posicionen abajo cuando no entran*/
+  
+    flex-direction: row;
+    /*pongo en fila*/
+  
+    justify-content: space-evenly;
+    /*trabaja a nivel de fila la separación*/
+   }

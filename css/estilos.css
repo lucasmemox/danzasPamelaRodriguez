@@ -943,6 +943,91 @@ body {
     background-position: left bottom;
     background-size: 100% 100%;
     background-image: url("../imagenes/fondoContacto.png"); }
+  .form-contacto .contactar {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    /*centro los inputs*/
+    z-index: 5;
+    transition: all 0.3s ease; }
+    .form-contacto .contactar .form-titulo-contacto {
+      color: #fff !important;
+      font-size: 1.7em !important;
+      text-align: center !important;
+      position: relative; }
+      .form-contacto .contactar .form-titulo-contacto span {
+        color: rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease; }
+    .form-contacto .contactar.slide-up {
+      top: 5%;
+      transform: translate(-50%, 0%);
+      transition: all 0.3s ease; }
+    .form-contacto .contactar.slide-up .form-principal-contacto,
+    .form-contacto .contactar.slide-up .contacto-btn {
+      opacity: 0;
+      visibility: hidden; }
+    .form-contacto .contactar.slide-up .form-titulo-contacto {
+      font-size: 1em;
+      cursor: pointer; }
+    .form-contacto .contactar.slide-up .form-titulo-contacto span {
+      margin-right: 5px;
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.3s ease; }
+    .form-contacto .contactar .form-principal-contacto {
+      border-radius: 15px;
+      background-color: transparent;
+      overflow: hidden;
+      margin-top: 70px;
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.3s ease;
+      padding: 5px;
+      /* Separamos la letra del interior (contenido) en los inputs de los bordes */
+      display: inline-block; }
+      .form-contacto .contactar .form-principal-contacto fieldset {
+        border-radius: 10px; }
+      .form-contacto .contactar .form-principal-contacto .textarea {
+        width: 250px;
+        height: 100px; }
+      .form-contacto .contactar .form-principal-contacto input, .form-contacto .contactar .form-principal-contacto .form-inscribite .inscripcion .form-principal-inscripcion option, .form-inscribite .inscripcion .form-principal-inscripcion .form-contacto .contactar .form-principal-contacto option, .form-contacto .contactar .form-principal-contacto .form-inscribite .inscripcion .form-principal-inscripcion select, .form-inscribite .inscripcion .form-principal-inscripcion .form-contacto .contactar .form-principal-contacto select {
+        border-radius: 5px;
+        padding: 4px !important;
+        /*tamaño del input*/
+        border: 0;
+        /*Quito el borde*/
+        border-color: #f4f7f6;
+        background-color: #dddedd;
+        margin-bottom: 1px !important;
+        margin-top: 1px !important;
+        width: 250px;
+        height: 30px; }
+    .form-contacto .contactar .contacto-btn {
+      background-color: rgba(0, 0, 0, 0.4);
+      color: rgba(255, 255, 255, 0.7);
+      border: 0;
+      border-radius: 15px;
+      display: block;
+      margin-left: 30px;
+      margin-right: 10px;
+      padding: 15px 45px;
+      width: 70%;
+      /*Tamaño del BOTON Enviar*/
+      height: 40px;
+      font-size: 19px;
+      font-weight: bold;
+      cursor: pointer;
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.3s ease;
+      transform: translateX(5%); }
+      .form-contacto .contactar .contacto-btn:hover {
+        transition: all 0.3s ease;
+        background-color: rgba(0, 0, 0, 0.8); }
 
 /*Texto MAquetado*/
 .stage {

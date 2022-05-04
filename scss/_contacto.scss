@@ -31,7 +31,8 @@
   h2 {
     margin-bottom: 30px;
     /*separo el h2 del contenido*/
-    color: cornflowerblue;
+    // color: cornflowerblue;
+    color: rgb(65, 147, 191);
     font-weight: 700;
     font-size: 3rem;
     margin: 0 auto;
@@ -39,7 +40,8 @@
     margin-top: 20px;
     text-align: center;
 
-    text-shadow: 2px 2px rgb(176, 5, 155);
+    // text-shadow: 2px 2px rgb(176, 5, 155);
+    text-shadow: 2px 2px white;
   }
 }
 .cont-principal-conoceme {
@@ -104,8 +106,8 @@
 .form-contacto {
   background-color: #222;
   border-radius: 15px;
-  width: 500px;
-  height: 600px;
+  width: 400px;
+  height: 500px;
   position: relative;
   overflow: hidden;
 
@@ -124,9 +126,9 @@
   }
 
   .contactar {
-    
+
     position: relative;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%; /*centro los inputs*/
@@ -180,7 +182,7 @@
       opacity: 1;
       visibility: visible;
       transition: all 0.3s ease;
-    
+
       padding: 5px;
       /* Separamos la letra del interior (contenido) en los inputs de los bordes */
       display: inline-block;
@@ -208,7 +210,7 @@
         width: 250px;
         height: 30px;
       }
-     
+
     }
 
     .contacto-btn {
@@ -237,4 +239,22 @@
       }
     }
   }
+}
+
+.separador-iframe{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /*Para que se posicionen abajo cuando no entran*/
+  flex-direction: row;
+  /*pongo en fila*/
+
+  margin-top: 20px;
+  margin-bottom: 0px;
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  justify-content: space-evenly;
+  /*trabaja a nivel de fila la separacion*/
+
 }

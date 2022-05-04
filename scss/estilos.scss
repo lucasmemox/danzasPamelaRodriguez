@@ -573,45 +573,26 @@ body {
   /*Separación entre lineas de un párrafo*/
   color: black;
 
-}
+  h2 {
+    @include encabezadoh2;
+  }
 
-.fotos-principal h2 {
-  margin-bottom: 30px;
-  /*separo el h2 del contenido*/
-  color: cornflowerblue;
-  font-weight: 700;
-  font-size: 3rem;
-  margin: 0 auto;
-  /* Centro */
-  margin-top: 20px;
-  text-align: center;
-
-  text-shadow: 2px 2px rgb(176, 5, 155);
-}
-
-.fotos-principal p {
-  color: white;
-  text-align: center;
-
-  text-shadow: 2px 2px rgb(176, 5, 155);
-}
-
-.fotos-principal hr {
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-
-.fotos-principal p {
-  font-weight: 700;
+  p {
+    font-weight: 700;
   font-size: 3rem;
   margin: 0 auto;
   /* Centro */
   margin-top: 20px;
   text-align: center;
   margin-bottom: 20px;
-}
+  }
 
+  hr {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
 
 /*FIN ARREGLO*/
 

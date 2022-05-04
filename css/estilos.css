@@ -469,19 +469,7 @@ body {
   /*Separación entre lineas de un párrafo*/
   color: black; }
 
-.fotos-principal h2 {
-  margin-bottom: 30px;
-  /*separo el h2 del contenido*/
-  color: cornflowerblue;
-  font-weight: 700;
-  font-size: 3rem;
-  margin: 0 auto;
-  /* Centro */
-  margin-top: 20px;
-  text-align: center;
-  text-shadow: 2px 2px #b0059b; }
-
-.fotos-principal p {
+.fotos-principal .fotos-principal p {
   color: white;
   text-align: center;
   text-shadow: 2px 2px #b0059b; }

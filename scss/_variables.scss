@@ -54,3 +54,17 @@ $paletas: (
     align-items: center;
     /* Centrado Para justificar el contenido, según su contenido dentro del contenedor, no todas ocuparan lo mismo */
    }
+
+   @mixin encabezadoh2{
+      margin-bottom: 30px;
+    /*separo el h del contenido*/
+    color: rgb(65, 147, 191);
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0 auto;
+    /* Centro */
+    margin-top: 20px;
+    text-align: center;
+
+    text-shadow: 2px 2px white;
+   }

@@ -1,0 +1,70 @@
+$sombraH2: 2px 2px rgb(176, 5, 155);
+$sombraDivImagenes: 5px 6px 7px 0px grey;
+
+$paletas: (
+   'primario': rgb(26,11,107),
+   'secundario': rgb(12,204,70),
+   'hecho': rgb(40,192,40),
+   'peligro': rgb(231,47,56),
+   'difuminar': rgb(221, 222, 221),
+   'formulario': rgb(244, 247, 246 ),
+   'transparente': transparent,
+);
+
+
+@mixin recuadros($largo) {
+   width: $largo;  
+   height: auto;
+   text-align: center;
+   line-height: 60px;
+   margin: 5px;
+   /*Separo las cajas*/
+   margin-left: 50px;
+   margin-right: 50px;
+   margin-top: 20px;
+   cursor: pointer;
+}
+
+@mixin flexDivision {
+  
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap; /*Para que se posicionen abajo cuando no entran*/
+  
+    flex-direction: row;
+    /*pongo en fila*/
+  
+    justify-content: space-evenly;
+    /*trabaja a nivel de fila la separación*/
+   }
+
+   @mixin formFlex {
+    width: 500px;
+    /* Sin ancho no puedo centrar el formulario */
+    max-width: 500px;
+    /* Máximo ancho posible para el formulario */
+    margin: 0 auto;
+    /* Centro el formulario */
+    display: flex;
+    flex-direction: column;
+    /*  los elementos se ordenan en el eje vertical */
+    justify-content: center;
+    /* justifica la caja al centro */
+    align-items: center;
+    /* Centrado Para justificar el contenido, según su contenido dentro del contenedor, no todas ocuparan lo mismo */
+   }
+
+   @mixin estiloh2{
+      margin-bottom: 30px;
+    /*separo el h del contenido*/
+    color: rgb(65, 147, 191);
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0 auto;
+    /* Centro */
+    margin-top: 20px;
+    text-align: center;
+
+    text-shadow: 2px 2px white;
+   }

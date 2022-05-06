@@ -1,0 +1,594 @@
+html {
+  height: 100%;
+  font-size: 62.5%;
+  /* =10px */
+}
+
+/*Defino los parámetros del Cuerpo de la pagina*/
+body {
+  color: black;
+  /*Color de Letra*/
+  /*  font-family: Georgia, "Times New Roman", Times, serif; Fuente del Body*/
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1.4rem;
+  /* Tamaño de Fuente en el Body*/
+  line-height: 1em;
+  /* distancia entre lineas de Texto*/
+  margin: 0;
+  min-height: 100%;
+  /*background-color: white;*/
+
+  background: #d3cce3;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e9e4f0, #d3cce3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*ARREGLAR*/
+.contenedor-grid {
+  display: grid;
+  /*utilizo grid*/
+  grid-template-areas:
+    "cabecera cabecera cabecera"
+    "principal principal principal"
+    "piepagina piepagina piepagina";
+  grid-template-columns: repeat(3, 1fr);
+  /*Son 3 las columnas*/
+  grid-template-rows: repeat(3, 1fr);
+  /*Son 3 las Filas*/
+  grid-template-rows: 80px auto auto;
+
+  margin-top: 0px;
+  /*Margen Superior 0*/
+  margin: 20px auto;
+  /*centro la pagina*/
+  grid-gap: 10px;
+  /*espaciado entre secciones*/
+}
+
+.cabecera {
+  grid-area: cabecera;
+  /*Que ocupe la definición de area*/
+  position: sticky;
+  top: 0;
+  background-repeat: no-repeat;
+  /*No repetir el fondo */
+  background: #3494e6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ec6ead, #3494e6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ec6ead, #3494e6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 1.7rem;
+  z-index: 100;
+}
+
+/*Defino la clase dentro del div que contiene el navegador*/
+.cabecera-nav {
+  display: flex;
+
+  justify-content: space-around;
+  /* Distribuir items uniformemente Los items tienen el mismo espacio a su alrededor */
+  align-items: center;
+  /*alineo los objetos de la cabecera, el logo y el menu*/
+}
+
+.cabecera-nav nav ul {
+  margin: 0;
+  /*margen de cero */
+  padding: 0;
+  /*relleno 0*/
+  list-style: none;
+  /*No tiene elementos de Lista - saca la viñeta */
+}
+
+/*Elementos de lista dentro del ul*/
+.cabecera-nav nav ul li {
+  display: inline-block;
+  /*Se va a mostrar el menu "horizontal"*/
+}
+
+/*Enlaces dentro de ul li*/
+.cabecera-nav nav ul li a {
+  display: block;
+  /*Se muestran como bloque*/
+  padding: 0.5rem 1rem;
+  /* Relleno Arriba - Abajo*/
+  text-decoration: none;
+  /*Que los enlaces no estén subrayados*/
+  color: white;
+  /*En el header el color de los enlaces sean blancos*/
+}
+
+/*Pasar el mouse sobre el menu de cabecera*/
+.cabecera-nav nav ul li a:hover {
+  background: rgb(232, 93, 178);
+  /*color al pasar el mouse sobre el enlace*/
+  transition: all 0.4s linear;
+  /*pongo una animación de 4 segundos lineal*/
+  border-radius: 5px;
+}
+
+.logo-imagen {
+  display: block;
+  width: 140px;
+  height: 70px;
+}
+
+.logo-acordeon {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.fondo-desplegable {
+  background-color: #278ce6 !important;
+  font-size: 1.5rem !important;
+}
+
+.img-slide {
+  height: 500px;
+  width: 700px;
+}
+
+.piepagina {
+  grid-area: piepagina;
+}
+
+.piepagina-contenedor {
+  display: grid;
+  grid-template-areas:
+    "info-pie      clases-pie     horarios-pie"
+    "derechos-pie  derechos-pie   derechos-pie";
+  grid-template-columns: repeat(3, 1fr);
+  /*Son 3 las columnas*/
+  grid-template-rows: repeat(2, 1fr);
+  /*2 Fila*/
+  grid-template-rows: auto;
+
+  background: #3494e6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ec6ead, #3494e6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ec6ead, #3494e6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 1.7rem;
+
+  width: 100%;
+  padding: 50px 0px;
+}
+
+.piepagina-contenedor h2 {
+  margin-bottom: 30px;
+  /*separo el h2 del contenido*/
+  color: #343434;
+  font-weight: 700;
+  margin: 0 auto;
+  /* Centro */
+  margin-top: 20px;
+}
+
+.piepagina-contenedor a {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  /*separo el h2 del contenido*/
+  color: rgb(102, 100, 99);
+  font-weight: 600;
+  text-decoration: none;
+  /*Que los enlaces no estén subrayados*/
+}
+
+.piepagina-contenedor a:hover {
+  opacity: 0.8;
+}
+
+.piepagina-contenedor a .fa-brands .fa-solid {
+  font-size: 20px;
+  /*para los iconos del fab*/
+}
+
+.info-pie {
+  grid-area: info-pie;
+  display: grid;
+}
+
+.logo-pie {
+  /* Máximo ancho posible para el para la imagen */
+  margin: 0 auto;
+  /* Centro la imagen */
+  margin-top: 5px;
+  /*Separo la imagen del Main*/
+  display: block;
+  width: 140px;
+  height: 70px;
+}
+
+.datos-infopie {
+  display: flex;
+  flex-direction: column;
+  /*Los elementos se alinean en columnas*/
+  flex-wrap: wrap;
+  margin: 0 auto;
+  /* Centro */
+  padding: 40px;
+  /*espaciado*/
+  margin-top: 5px;
+  /*para separarlo del logo*/
+}
+
+.clases-pie {
+  grid-area: clases-pie;
+  display: grid;
+}
+
+.datos-clases-pie {
+  display: flex;
+  flex-direction: column;
+  /*Los elementos se alinean en columnas*/
+  flex-wrap: wrap;
+  margin: 0 auto;
+  /* Centro */
+  padding: 40px;
+  /*espaciado*/
+}
+
+.horarios-pie {
+  grid-area: horarios-pie;
+  display: grid;
+}
+
+.datos-horarios-pie {
+  display: flex;
+  flex-direction: column;
+  /*Los elementos se alinean en columnas*/
+  flex-wrap: wrap;
+  margin: 0 auto;
+  /* Centro */
+  padding: 40px;
+  /*espaciado*/
+}
+
+.derechos-pie {
+  grid-area: derechos-pie;
+  display: grid;
+}
+
+.datos-derechos-pie {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 30px;
+}
+
+.datos-derechos-pie p {
+  margin-top: 20px;
+  color: #343434;
+}
+
+.datos-derechos-pie hr {
+  height: 2px;
+  background-color: white;
+}
+
+/*INDEX*/
+
+.principal {
+  grid-area: principal;
+  margin: 0 auto;
+}
+
+.separador-index-clases {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /*Para que se posicionen abajo cuando no entran*/
+  flex-direction: row;
+  /*pongo en fila*/
+
+  background: #3494e6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ec6ead, #3494e6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ec6ead, #3494e6);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  justify-content: space-evenly;
+  /*trabaja a nivel de fila la separacion*/
+}
+
+.contenedor-principal {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /*Para que se posicionen abajo cuando no entran*/
+  flex-direction: row;
+  /*pongo en fila*/
+
+  justify-content: space-evenly;
+  /*trabaja a nivel de fila la separacion*/
+
+  background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000);
+}
+
+.caja {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  line-height: 60px;
+  margin: 5px;
+  /*Separo las cajas*/
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 20px;
+
+  cursor: pointer;
+}
+
+.encabezado {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  margin-left: 400px;
+  margin-right: 200px;
+  margin-top: 10px;
+}
+
+.encabezado h2 {
+  display: flex;
+  width: 500px;
+  height: 40px;
+  margin-bottom: 30px;
+  /*separo el h2 del contenido*/
+  color: cornflowerblue;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-top: 20px;
+  justify-content: space-evenly;
+  /* Distribuir items uniformemente Los items tienen el mismo espacio a su alrededor */
+  align-items: center;
+  /*alineo los objetos de la cabecera, el logo y el menu*/
+
+  text-shadow: 2px 2px rgb(176, 5, 155);
+}
+
+.encabezado p {
+  display: flex;
+  width: 500px;
+  height: 40px;
+  justify-content: space-evenly;
+  /* Distribuir items uniformemente Los items tienen el mismo espacio a su alrededor */
+  align-items: center;
+  /*alineo los objetos de la cabecera, el logo y el menu*/
+
+  border-radius: 8px;
+  border-color: antiquewhite;
+  border-style: solid;
+  border-width: 8px;
+
+  background: #3494e6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ec6ead, #3494e6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ec6ead, #3494e6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: white;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.img-clases:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: all 3s;
+  transition: all 3s;
+  opacity: 0.8;
+}
+
+.img-clases {
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  border-color: antiquewhite;
+  border-style: solid;
+  border-width: 9px;
+  box-shadow: 5px 6px 7px 0px grey;
+}
+
+.contenedor-index {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /*Para que se posicionen abajo cuando no entran*/
+  flex-direction: row;
+  /*pongo en fila*/
+
+  justify-content: space-evenly;
+  /*trabaja a nivel de fila la separación*/
+}
+
+.art-index {
+  margin: 0 auto;
+  display: flex;
+}
+
+.img-bcg-index {
+  height: 100vh;
+  min-height: 650px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.titulo {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.titulo-contenido {
+  transform: skewY(-12.5deg) scaleX(0.78) translateY(-10%);
+  /*color: #fff;*/
+  color: rgb(241, 223, 219);
+  padding: 0px 30px;
+}
+
+.titulo-contenido h1 {
+  font-size: 15vw;
+  animation: fadeInTop 0.3s 1s 1 forwards;
+  opacity: 0;
+  /*  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);*/
+  text-shadow: 1px 1px rgb(176, 5, 155);
+}
+
+.titulo-contenido h2 {
+  font-size: 6vw;
+  animation: fadeInBottom 0.3s 1s 1 forwards;
+  opacity: 0;
+  /*  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);*/
+  text-shadow: 1px 1px rgb(176, 5, 155);
+}
+
+@keyframes fadeInBottom {
+  0% {
+    transform: translateY(500px);
+    opacity: 0;
+    filter: blur(1.5rem);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    filter: 0;
+  }
+}
+
+@keyframes fadeInTop {
+  0% {
+    transform: translateY(-500px);
+    opacity: 0;
+    filter: blur(1.5rem);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    filter: 0;
+  }
+}
+
+/*CLASES HTML*/
+.contenedor-jazz-grid {
+  display: grid;
+  /*utilizo grid*/
+  grid-template-areas:
+    "cabecera cabecera cabecera"
+    "jazz jazz jazz"
+    "piepagina piepagina piepagina";
+  grid-template-columns: repeat(3, 1fr);
+  /*Son 3 las columnas*/
+  grid-template-rows: repeat(3, 1fr);
+  /*Son 3 las Filas*/
+  grid-template-rows: 80px auto auto;
+
+  margin-top: 0px;
+  /*Margen Superior 0*/
+  margin: 20px auto;
+  /*centro la pagina*/
+  grid-gap: 10px;
+  /*espaciado entre secciones*/
+}
+
+.jazz-principal {
+  grid-area: jazz;
+  margin: 0 auto;
+  /*0 arriba y abajo - y automático a los costados - me queda centrado*/
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  /*Separación entre lineas de un párrafo*/
+  color: black;
+}
+
+.contenedor-principal-jazz {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap; /*Para que se posicionen abajo cuando no entran*/
+
+  flex-direction: row;
+  /*pongo en fila*/
+
+  justify-content: space-evenly;
+  /*trabaja a nivel de fila la separación*/
+
+  .contenedor-jazz {
+    position: relative;
+    width: 100%;
+    height: 140px;
+
+    background: #d3cce3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e9e4f0, #d3cce3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    margin: 0 auto; //     Centro la imagen
+    margin-top: 20px; //Separo la imagen
+    margin-bottom: 30px;
+
+    .img-bcg-jazz {
+      width: 100%;
+      height: 130px;
+      align-self: center;
+    }
+
+    .titulo-jazz {
+      position: absolute;
+      /*Margenes*/
+      top: 30%;
+      left: 40%;
+      bottom: 25px;
+      right: 200px;
+      /*tamaño*/
+      width: 200px;
+      height: 70px;
+
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+
+      p {
+        margin-bottom: 30px;
+        color: #4193bf;
+        text-shadow: 2px 2px white;
+        font-weight: 700;
+        font-size: 3rem;
+        margin: 0 auto;
+        /* Centro */
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@import "conoceme";
+@import "inscripcion";
+@import "contacto";
+@import "fotos";
+@import "separadorEnMovimiento";
+@import "variables";
+@import "mobile";

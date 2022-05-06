@@ -18,12 +18,11 @@ body {
   min-height: 100%;
   /*background-color: white;*/
 
-
-  background: #D3CCE3;
+  background: #d3cce3;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+  background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+  background: linear-gradient(to right, #e9e4f0, #d3cce3);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -32,9 +31,9 @@ body {
   display: grid;
   /*utilizo grid*/
   grid-template-areas:
-    'cabecera cabecera cabecera'
-    'principal principal principal'
-    'piepagina piepagina piepagina';
+    "cabecera cabecera cabecera"
+    "principal principal principal"
+    "piepagina piepagina piepagina";
   grid-template-columns: repeat(3, 1fr);
   /*Son 3 las columnas*/
   grid-template-rows: repeat(3, 1fr);
@@ -56,11 +55,11 @@ body {
   top: 0;
   background-repeat: no-repeat;
   /*No repetir el fondo */
-  background: #3494E6;
+  background: #3494e6;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);
+  background: -webkit-linear-gradient(to right, #ec6ead, #3494e6);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #EC6EAD, #3494E6);
+  background: linear-gradient(to right, #ec6ead, #3494e6);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-size: 1.7rem;
   z-index: 100;
@@ -127,7 +126,6 @@ body {
 .fondo-desplegable {
   background-color: #278ce6 !important;
   font-size: 1.5rem !important;
-
 }
 
 .img-slide {
@@ -137,31 +135,29 @@ body {
 
 .piepagina {
   grid-area: piepagina;
-
 }
 
 .piepagina-contenedor {
   display: grid;
   grid-template-areas:
-    'info-pie      clases-pie     horarios-pie'
-    'derechos-pie  derechos-pie   derechos-pie';
+    "info-pie      clases-pie     horarios-pie"
+    "derechos-pie  derechos-pie   derechos-pie";
   grid-template-columns: repeat(3, 1fr);
   /*Son 3 las columnas*/
   grid-template-rows: repeat(2, 1fr);
   /*2 Fila*/
   grid-template-rows: auto;
 
-  background: #3494E6;
+  background: #3494e6;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);
+  background: -webkit-linear-gradient(to right, #ec6ead, #3494e6);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #EC6EAD, #3494E6);
+  background: linear-gradient(to right, #ec6ead, #3494e6);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-size: 1.7rem;
 
   width: 100%;
   padding: 50px 0px;
-
 }
 
 .piepagina-contenedor h2 {
@@ -220,13 +216,11 @@ body {
   /*espaciado*/
   margin-top: 5px;
   /*para separarlo del logo*/
-
 }
 
 .clases-pie {
   grid-area: clases-pie;
   display: grid;
-
 }
 
 .datos-clases-pie {
@@ -238,13 +232,11 @@ body {
   /* Centro */
   padding: 40px;
   /*espaciado*/
-
 }
 
 .horarios-pie {
   grid-area: horarios-pie;
   display: grid;
-
 }
 
 .datos-horarios-pie {
@@ -256,7 +248,6 @@ body {
   /* Centro */
   padding: 40px;
   /*espaciado*/
-
 }
 
 .derechos-pie {
@@ -276,14 +267,11 @@ body {
 .datos-derechos-pie p {
   margin-top: 20px;
   color: #343434;
-
 }
 
 .datos-derechos-pie hr {
-
   height: 2px;
   background-color: white;
-
 }
 
 /*INDEX*/
@@ -302,19 +290,16 @@ body {
   flex-direction: row;
   /*pongo en fila*/
 
-  background: #3494E6;
+  background: #3494e6;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);
+  background: -webkit-linear-gradient(to right, #ec6ead, #3494e6);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #EC6EAD, #3494E6);
+  background: linear-gradient(to right, #ec6ead, #3494e6);
 
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   justify-content: space-evenly;
   /*trabaja a nivel de fila la separacion*/
-
 }
-
-
 
 .contenedor-principal {
   width: 100%;
@@ -353,7 +338,6 @@ body {
   margin-left: 400px;
   margin-right: 200px;
   margin-top: 10px;
-
 }
 
 .encabezado h2 {
@@ -388,11 +372,11 @@ body {
   border-style: solid;
   border-width: 8px;
 
-  background: #3494E6;
+  background: #3494e6;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);
+  background: -webkit-linear-gradient(to right, #ec6ead, #3494e6);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #EC6EAD, #3494E6);
+  background: linear-gradient(to right, #ec6ead, #3494e6);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   color: white;
@@ -416,7 +400,6 @@ body {
   border-style: solid;
   border-width: 9px;
   box-shadow: 5px 6px 7px 0px grey;
-
 }
 
 .contenedor-index {
@@ -435,7 +418,6 @@ body {
 .art-index {
   margin: 0 auto;
   display: flex;
-
 }
 
 .img-bcg-index {
@@ -460,12 +442,11 @@ body {
   /*color: #fff;*/
   color: rgb(241, 223, 219);
   padding: 0px 30px;
-
 }
 
 .titulo-contenido h1 {
   font-size: 15vw;
-  animation: fadeInTop 0.30s 1s 1 forwards;
+  animation: fadeInTop 0.3s 1s 1 forwards;
   opacity: 0;
   /*  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);*/
   text-shadow: 1px 1px rgb(176, 5, 155);
@@ -473,7 +454,7 @@ body {
 
 .titulo-contenido h2 {
   font-size: 6vw;
-  animation: fadeInBottom 0.30s 1s 1 forwards;
+  animation: fadeInBottom 0.3s 1s 1 forwards;
   opacity: 0;
   /*  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);*/
   text-shadow: 1px 1px rgb(176, 5, 155);
@@ -491,7 +472,6 @@ body {
     opacity: 1;
     filter: 0;
   }
-
 }
 
 @keyframes fadeInTop {
@@ -506,17 +486,16 @@ body {
     opacity: 1;
     filter: 0;
   }
-
 }
 
 /*CLASES HTML*/
-.contenedor-clases-grid {
+.contenedor-jazz-grid {
   display: grid;
   /*utilizo grid*/
   grid-template-areas:
-    'cabecera cabecera cabecera'
-    'clases clases clases'
-    'piepagina piepagina piepagina';
+    "cabecera cabecera cabecera"
+    "jazz jazz jazz"
+    "piepagina piepagina piepagina";
   grid-template-columns: repeat(3, 1fr);
   /*Son 3 las columnas*/
   grid-template-rows: repeat(3, 1fr);
@@ -531,15 +510,65 @@ body {
   /*espaciado entre secciones*/
 }
 
-.clases-principal {
-  grid-area: clases;
+.jazz-principal {
+  grid-area: jazz;
   margin: 0 auto;
   /*0 arriba y abajo - y automático a los costados - me queda centrado*/
   font-size: 1.5rem;
   line-height: 1.5em;
   /*Separación entre lineas de un párrafo*/
   color: black;
+}
 
+.contenedor-jazz {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /*Para que se posicionen abajo cuando no entran*/
+  flex-direction: row;
+  /*pongo en fila*/
+
+  background: #d3cce3;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e9e4f0, #d3cce3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  justify-content: space-evenly;
+  /*trabaja a nivel de fila la separación*/
+
+  .art-index {
+    
+  //   // &:hover {
+  //   //   opacity: 1;
+  //   // }
+
+    .img-bcg-jazz {
+      width: 100%;
+      height: 130px;
+      position: relative;
+      overflow: hidden;
+      background-size: cover;
+    }
+
+    .titulo-jazz {
+      position: absolute;
+      overflow: hidden;
+      width: 270px;
+      height: 15px;
+      background-color: rgb(21, 21, 21);
+      transition: opacity 0.2s;
+      opacity: 0;
+
+      p {
+        position: absolute;
+        font-size: 21px;
+        margin-left: -70px;
+      }
+    }
+  }
 }
 
 @import "conoceme";

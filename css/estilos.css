@@ -20,18 +20,18 @@ body {
   margin: 0;
   min-height: 100%;
   /*background-color: white;*/
-  background: #D3CCE3;
+  background: #d3cce3;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+  background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+  background: linear-gradient(to right, #e9e4f0, #d3cce3);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 /*ARREGLAR*/
 .contenedor-grid {
   display: grid;
   /*utilizo grid*/
-  grid-template-areas: 'cabecera cabecera cabecera' 'principal principal principal' 'piepagina piepagina piepagina';
+  grid-template-areas: "cabecera cabecera cabecera" "principal principal principal" "piepagina piepagina piepagina";
   grid-template-columns: repeat(3, 1fr);
   /*Son 3 las columnas*/
   grid-template-rows: repeat(3, 1fr);
@@ -51,11 +51,11 @@ body {
   top: 0;
   background-repeat: no-repeat;
   /*No repetir el fondo */
-  background: #3494E6;
+  background: #3494e6;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);
+  background: -webkit-linear-gradient(to right, #ec6ead, #3494e6);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #EC6EAD, #3494E6);
+  background: linear-gradient(to right, #ec6ead, #3494e6);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-size: 1.7rem;
   z-index: 100; }
@@ -123,17 +123,17 @@ body {
 
 .piepagina-contenedor {
   display: grid;
-  grid-template-areas: 'info-pie      clases-pie     horarios-pie' 'derechos-pie  derechos-pie   derechos-pie';
+  grid-template-areas: "info-pie      clases-pie     horarios-pie" "derechos-pie  derechos-pie   derechos-pie";
   grid-template-columns: repeat(3, 1fr);
   /*Son 3 las columnas*/
   grid-template-rows: repeat(2, 1fr);
   /*2 Fila*/
   grid-template-rows: auto;
-  background: #3494E6;
+  background: #3494e6;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);
+  background: -webkit-linear-gradient(to right, #ec6ead, #3494e6);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #EC6EAD, #3494E6);
+  background: linear-gradient(to right, #ec6ead, #3494e6);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-size: 1.7rem;
   width: 100%;
@@ -251,11 +251,11 @@ body {
   /*Para que se posicionen abajo cuando no entran*/
   flex-direction: row;
   /*pongo en fila*/
-  background: #3494E6;
+  background: #3494e6;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);
+  background: -webkit-linear-gradient(to right, #ec6ead, #3494e6);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #EC6EAD, #3494E6);
+  background: linear-gradient(to right, #ec6ead, #3494e6);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   justify-content: space-evenly;
   /*trabaja a nivel de fila la separacion*/ }
@@ -321,11 +321,11 @@ body {
   border-color: antiquewhite;
   border-style: solid;
   border-width: 8px;
-  background: #3494E6;
+  background: #3494e6;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);
+  background: -webkit-linear-gradient(to right, #ec6ead, #3494e6);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #EC6EAD, #3494E6);
+  background: linear-gradient(to right, #ec6ead, #3494e6);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
   font-weight: 700;
@@ -385,14 +385,14 @@ body {
 
 .titulo-contenido h1 {
   font-size: 15vw;
-  animation: fadeInTop 0.30s 1s 1 forwards;
+  animation: fadeInTop 0.3s 1s 1 forwards;
   opacity: 0;
   /*  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);*/
   text-shadow: 1px 1px #b0059b; }
 
 .titulo-contenido h2 {
   font-size: 6vw;
-  animation: fadeInBottom 0.30s 1s 1 forwards;
+  animation: fadeInBottom 0.3s 1s 1 forwards;
   opacity: 0;
   /*  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);*/
   text-shadow: 1px 1px #b0059b; }
@@ -418,10 +418,10 @@ body {
     filter: 0; } }
 
 /*CLASES HTML*/
-.contenedor-clases-grid {
+.contenedor-jazz-grid {
   display: grid;
   /*utilizo grid*/
-  grid-template-areas: 'cabecera cabecera cabecera' 'clases clases clases' 'piepagina piepagina piepagina';
+  grid-template-areas: "cabecera cabecera cabecera" "jazz jazz jazz" "piepagina piepagina piepagina";
   grid-template-columns: repeat(3, 1fr);
   /*Son 3 las columnas*/
   grid-template-rows: repeat(3, 1fr);
@@ -434,14 +434,49 @@ body {
   grid-gap: 10px;
   /*espaciado entre secciones*/ }
 
-.clases-principal {
-  grid-area: clases;
+.jazz-principal {
+  grid-area: jazz;
   margin: 0 auto;
   /*0 arriba y abajo - y automático a los costados - me queda centrado*/
   font-size: 1.5rem;
   line-height: 1.5em;
   /*Separación entre lineas de un párrafo*/
   color: black; }
+
+.contenedor-jazz {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /*Para que se posicionen abajo cuando no entran*/
+  flex-direction: row;
+  /*pongo en fila*/
+  background: #d3cce3;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e9e4f0, #d3cce3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  justify-content: space-evenly;
+  /*trabaja a nivel de fila la separación*/ }
+  .contenedor-jazz .art-index .img-bcg-jazz {
+    width: 100%;
+    height: 130px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover; }
+  .contenedor-jazz .art-index .titulo-jazz {
+    position: absolute;
+    overflow: hidden;
+    width: 270px;
+    height: 15px;
+    background-color: #151515;
+    transition: opacity 0.2s;
+    opacity: 0; }
+    .contenedor-jazz .art-index .titulo-jazz p {
+      position: absolute;
+      font-size: 21px;
+      margin-left: -70px; }
 
 .contenedor-conoceme-grid {
   display: grid;

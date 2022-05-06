@@ -512,74 +512,120 @@ body {
 
 .jazz-principal {
   grid-area: jazz;
-  margin: 0 auto;
+  margin-left: 0px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  height: auto;
   /*0 arriba y abajo - y automático a los costados - me queda centrado*/
   font-size: 1.5rem;
   line-height: 1.5em;
   /*Separación entre lineas de un párrafo*/
   color: black;
-}
 
-.contenedor-principal-jazz {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap; /*Para que se posicionen abajo cuando no entran*/
-
-  flex-direction: row;
-  /*pongo en fila*/
-
-  justify-content: space-evenly;
-  /*trabaja a nivel de fila la separación*/
-
-  .contenedor-jazz {
-    position: relative;
+  .contenedor-principal-jazz {
     width: 100%;
-    height: 140px;
+    height: 150;
+    display: flex;
+    flex-wrap: wrap; /*Para que se posicionen abajo cuando no entran*/
+    margin-left: 0;
+    flex-direction: row;
+    /*pongo en fila*/
 
-    background: #d3cce3;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #e9e4f0, #d3cce3);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    justify-content: space-evenly;
+    /*trabaja a nivel de fila la separación*/
 
-    margin: 0 auto; //     Centro la imagen
-    margin-top: 20px; //Separo la imagen
-    margin-bottom: 30px;
-
-    .img-bcg-jazz {
+    .contenedor-jazz {
       width: 100%;
-      height: 130px;
-      align-self: center;
+      height: 140px;
+      display: flex;
+      flex-wrap: wrap;
+      /*Para que se posicionen abajo cuando no entran*/
+      flex-direction: row;
+      /*pongo en fila*/
+      position: relative;
+
+      justify-content: space-evenly;
+      /*trabaja a nivel de fila la separación*/
+
+      background: #d3cce3;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #e9e4f0, #d3cce3);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      margin: 0 auto; //     Centro la imagen
+      margin-top: 20px; //Separo la imagen
+      margin-bottom: 30px;
+
+      .img-bcg-jazz {
+        width: 100%;
+        height: 130px;
+      }
+
+      .titulo-jazz {
+        position: absolute;
+        /*Margenes*/
+        top: 30%;
+        left: 40%;
+        bottom: 25px;
+        right: 200px;
+        /*tamaño*/
+        width: 200px;
+        height: 70px;
+
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+
+        p {
+          margin-bottom: 30px;
+          color: #4193bf;
+          text-shadow: 2px 2px white;
+          font-weight: 700;
+          font-size: 3rem;
+          margin: 0 auto;
+          /* Centro */
+          margin-top: 20px;
+          text-align: center;
+        }
+      }
     }
+    .descripcion-jazz {
+      display: flex;
+      flex-wrap: wrap;
+      /*Para que se posicionen abajo cuando no entran*/
+      flex-direction: row;
+      /*pongo en fila*/
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin-left: 0px;
+      margin-right: 10px;
+      margin-top: 20px;
+      cursor: pointer;
 
-    .titulo-jazz {
-      position: absolute;
-      /*Margenes*/
-      top: 30%;
-      left: 40%;
-      bottom: 25px;
-      right: 200px;
-      /*tamaño*/
-      width: 200px;
-      height: 70px;
+      .text-jazz {
+        line-height: 60px;
+        margin: 5px;
+        /*Separo las cajas*/
+        
 
-      background: rgba(255, 255, 255, 0.4);
-      backdrop-filter: blur(10px);
-      border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.2);
+        p {
+          margin-left: 10%;
+          margin-right: 10%;
+          line-height: 2em;
+          hyphens: auto;
+          word-wrap: break-word;
+          word-break: break-word;
+          text-justify: auto;
 
-      p {
-        margin-bottom: 30px;
-        color: #4193bf;
-        text-shadow: 2px 2px white;
-        font-weight: 700;
-        font-size: 3rem;
-        margin: 0 auto;
-        /* Centro */
-        margin-top: 20px;
-        text-align: center;
+          .encabezadosjazz {
+            justify-content: center;
+          }
+        }
       }
     }
   }

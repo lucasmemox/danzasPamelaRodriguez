@@ -520,52 +520,66 @@ body {
   color: black;
 }
 
-.contenedor-jazz {
+.contenedor-principal-jazz {
   width: 100%;
   height: auto;
   display: flex;
-  flex-wrap: wrap;
-  /*Para que se posicionen abajo cuando no entran*/
+  flex-wrap: wrap; /*Para que se posicionen abajo cuando no entran*/
+
   flex-direction: row;
   /*pongo en fila*/
-
-  background: #d3cce3;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #e9e4f0, #d3cce3);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   justify-content: space-evenly;
   /*trabaja a nivel de fila la separación*/
 
-  .art-index {
-    
-  //   // &:hover {
-  //   //   opacity: 1;
-  //   // }
+  .contenedor-jazz {
+    position: relative;
+    width: 100%;
+    height: 140px;
+
+    background: #d3cce3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e9e4f0, #d3cce3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    margin: 0 auto; //     Centro la imagen
+    margin-top: 20px; //Separo la imagen
+    margin-bottom: 30px;
 
     .img-bcg-jazz {
       width: 100%;
       height: 130px;
-      position: relative;
-      overflow: hidden;
-      background-size: cover;
+      align-self: center;
     }
 
     .titulo-jazz {
       position: absolute;
-      overflow: hidden;
-      width: 270px;
-      height: 15px;
-      background-color: rgb(21, 21, 21);
-      transition: opacity 0.2s;
-      opacity: 0;
+      /*Margenes*/
+      top: 30%;
+      left: 40%;
+      bottom: 25px;
+      right: 200px;
+      /*tamaño*/
+      width: 200px;
+      height: 70px;
+
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
 
       p {
-        position: absolute;
-        font-size: 21px;
-        margin-left: -70px;
+        margin-bottom: 30px;
+        color: #4193bf;
+        text-shadow: 2px 2px white;
+        font-weight: 700;
+        font-size: 3rem;
+        margin: 0 auto;
+        /* Centro */
+        margin-top: 20px;
+        text-align: center;
       }
     }
   }

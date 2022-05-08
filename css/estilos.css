@@ -633,7 +633,6 @@ body {
       margin-top: 20px;
       cursor: pointer; }
       .folclore-principal .contenedor-principal-folclore .descripcion-folclore .text-folclore .idc-box {
-        background: #f9f9f9 none repeat scroll 0 0;
         border: 1px solid #aaa;
         display: flex;
         margin-left: 30%;
@@ -642,10 +641,11 @@ body {
         padding: 20px;
         width: 450px;
         height: auto;
-        background-image: url("../imagenes/fondos.png");
+        background-image: url("../imagenes/folklor.png");
         overflow: hidden;
         background-size: contain;
-        background-repeat: repeat; }
+        background-repeat: repeat;
+        font-weight: 500; }
         .folclore-principal .contenedor-principal-folclore .descripcion-folclore .text-folclore .idc-box .idc-titulo {
           display: flex;
           flex-direction: row;

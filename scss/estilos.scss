@@ -104,6 +104,7 @@ body {
 
 /*Pasar el mouse sobre el menu de cabecera*/
 .cabecera-nav nav ul li a:hover {
+  // @include resaltado;
   background: rgb(232, 93, 178);
   /*color al pasar el mouse sobre el enlace*/
   transition: all 0.4s linear;
@@ -751,7 +752,7 @@ body {
 
       .text-folclore {
         .idc-box {
-          background: #f9f9f9 none repeat scroll 0 0;
+          // background: #f9f9f9 none repeat scroll 0 0;
           border: 1px solid #aaa;
           display: flex;
           margin-left: 30%;
@@ -760,10 +761,12 @@ body {
           padding: 20px;
           width: 450px;
           height: auto;
-          background-image: url("../imagenes/fondos.png");
+          background-image: url("../imagenes/folklor.png");
           overflow: hidden;
           background-size: contain;
           background-repeat: repeat;
+          font-weight: 500;
+
 
           .idc-titulo {
             display: flex;
@@ -791,6 +794,10 @@ body {
             display: table-cell;
             padding-right: 0.6em;
           }
+
+          // ol > li:hover {
+          //   @include resaltado;
+          // }
 
           li ol > li {
             margin: 0;

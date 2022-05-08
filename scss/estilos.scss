@@ -753,16 +753,24 @@ body {
         .idc-box {
           background: #f9f9f9 none repeat scroll 0 0;
           border: 1px solid #aaa;
-          display: table;
+          display: flex;
+          margin-left: 30%;
           font-size: 95%;
           margin-bottom: 1em;
           padding: 20px;
-          width: auto;
-          margin-left: 10%;
+          width: 450px;
+          height: auto;
+          background-image: url("../imagenes/fondos.png");
+          overflow: hidden;
+          background-size: contain;
+          background-repeat: repeat;
 
           .idc-titulo {
+            display: flex;
+            flex-direction: row;
             font-weight: 700;
             text-align: center;
+            color: white;
           }
 
           ol {
@@ -771,28 +779,28 @@ body {
             margin: 0;
             padding: 0;
           }
-          
+
           ol > li {
             display: table;
             counter-increment: item;
             margin-bottom: 0.6em;
           }
-          
+
           ol > li:before {
             content: counters(item, ".") ") ";
             display: table-cell;
             padding-right: 0.6em;
           }
-          
+
           li ol > li {
             margin: 0;
           }
-          
+
           li ol > li:before {
             content: counters(item, ".") ") ";
           }
 
-          ol li{
+          ol li {
             padding: 0 5px;
             // list-style: outside none none !important;
             list-style-type: lower-roman;
@@ -800,7 +808,7 @@ body {
             /* Relleno Arriba - Abajo*/
             text-decoration: none;
             /*Que los enlaces no estén subrayados*/
-            color: #0b518f !important;
+            color: white !important;
             /*En el header el color de los enlaces sean blancos*/
           }
         }

@@ -94,16 +94,16 @@
     align-self: center !important;
   }
 
-  .contenedor-jazz-grid {
-    grid-template-areas:
-      "cabecera"
-      "jazz"
-      "piepagina";
-    grid-template-columns: repeat(1, 350px);
-    /*Son 3 las columnas*/
-    grid-template-rows: repeat(3, auto);
-    /*Son 3 las Filas*/
-  }
+  // .contenedor-jazz-grid {
+  //   grid-template-areas:
+  //     "cabecera"
+  //     "jazz"
+  //     "piepagina";
+  //   grid-template-columns: repeat(1, 350px);
+  //   /*Son 3 las columnas*/
+  //   grid-template-rows: repeat(3, auto);
+  //   /*Son 3 las Filas*/
+  // }
 
   .img-inscripcion2022 {
     height: 150px;
@@ -115,8 +115,6 @@
   .div-form-inscripcion {
     width: 340px;
     /* Sin ancho no puedo centrar el formulario */
-
-    /* Máximo ancho posible para el formulario */
 
     .form-inscribite {
       
@@ -132,16 +130,6 @@
       align-items: center !important;
     }
   }
-
-  // .contenedor-contacto-grid {
-  //   grid-template-areas:
-  //     "cabecera"
-  //     "contacto"
-  //     "piepagina";
-  //   grid-template-columns: repeat(1, 350px);
-  //   /*Son 3 las columnas*/
-  //   grid-template-rows: repeat(3, auto);
-  // }
 
   .div-form-contacto {
     width: 330px;

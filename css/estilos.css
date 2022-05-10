@@ -1458,12 +1458,6 @@ body {
     width: 310px !important;
     height: 450px;
     align-self: center !important; }
-  .contenedor-jazz-grid {
-    grid-template-areas: "cabecera" "jazz" "piepagina";
-    grid-template-columns: repeat(1, 350px);
-    /*Son 3 las columnas*/
-    grid-template-rows: repeat(3, auto);
-    /*Son 3 las Filas*/ }
   .img-inscripcion2022 {
     height: 150px;
     width: 300px;
@@ -1471,8 +1465,7 @@ body {
     justify-content: center; }
   .div-form-inscripcion {
     width: 340px;
-    /* Sin ancho no puedo centrar el formulario */
-    /* Máximo ancho posible para el formulario */ }
+    /* Sin ancho no puedo centrar el formulario */ }
     .div-form-inscripcion .form-inscribite {
       border-radius: 15px;
       height: 550px;

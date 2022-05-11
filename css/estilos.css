@@ -1464,12 +1464,13 @@ body {
     align-items: center;
     justify-content: center; }
   .div-form-inscripcion {
-    width: 340px;
-    /* Sin ancho no puedo centrar el formulario */ }
+    width: 330px;
+    /* Sin ancho no puedo centrar el formulario */
+    max-width: 340px; }
     .div-form-inscripcion .form-inscribite {
       border-radius: 15px;
-      height: 550px;
-      width: 340px;
+      width: 320px;
+      height: 500px;
       position: relative;
       overflow: hidden;
       margin: 0 auto !important;
@@ -1477,6 +1478,14 @@ body {
       flex-direction: column;
       justify-content: center !important;
       align-items: center !important; }
+      .div-form-inscripcion .form-inscribite .inscripcion {
+        width: 300px;
+        height: 450px;
+        margin-left: 20px; }
+        .div-form-inscripcion .form-inscribite .inscripcion .form-principal-inscripcion .inscribirse-btn {
+          margin-left: 30px !important;
+          width: 100px !important;
+          /*Tamaño del BOTON Registrarse*/ }
   .div-form-contacto {
     width: 330px;
     /* Sin ancho no puedo centrar el formulario */

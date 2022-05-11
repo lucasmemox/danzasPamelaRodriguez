@@ -1499,4 +1499,14 @@ body {
           width: 110px;
           /* Para que no se rompa en dos líneas, y lo translade tal cual. */
           left: 50%;
-          transform: translateX(-50%); } }
+          transform: translateX(-50%); }
+  .titulo-jazz {
+    position: absolute;
+    /*Margenes*/
+    top: 40px !important;
+    left: 80px !important;
+    bottom: 25px !important;
+    right: 20px !important;
+    /*tamaño*/
+    width: 150px;
+    height: 70px; } }

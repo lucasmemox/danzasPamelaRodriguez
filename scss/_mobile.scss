@@ -107,7 +107,6 @@
     max-width: 340px;
 
     .form-inscribite {
-      
       border-radius: 15px;
       width: 320px;
       height: 500px;
@@ -119,16 +118,15 @@
       justify-content: center !important;
       align-items: center !important;
 
-      .inscripcion{
+      .inscripcion {
         width: 300px;
         height: 450px;
         margin-left: 20px;
-          .form-principal-inscripcion {
-          .inscribirse-btn{
+        .form-principal-inscripcion {
+          .inscribirse-btn {
             margin-left: 30px !important;
             // padding: 15px 45px;
             width: 100px !important; /*Tamaño del BOTON Registrarse*/
-           
           }
         }
       }
@@ -156,5 +154,17 @@
         }
       }
     }
+  }
+
+  .titulo-jazz {
+    position: absolute;
+    /*Margenes*/
+    top: 40px !important;
+    left: 80px !important;
+    bottom: 25px !important;
+    right: 20px !important;
+    /*tamaño*/
+    width: 150px;
+    height: 70px;
   }
 }

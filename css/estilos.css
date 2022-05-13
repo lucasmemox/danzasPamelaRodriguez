@@ -693,7 +693,8 @@ body {
   grid-template-rows: 80px auto auto;
   margin-top: 0px;
   margin: 20px auto;
-  grid-gap: 10px; }
+  grid-gap: 10px;
+  z-index: 100; }
 
 .conoceme-principal {
   grid-area: conoceme;
@@ -825,7 +826,8 @@ body {
   margin: 20px auto;
   /*centro la pagina*/
   grid-gap: 10px;
-  /*espaciado entre secciones*/ }
+  /*espaciado entre secciones*/
+  z-index: 100; }
 
 .inscripcion-principal {
   grid-area: inscripcion;
@@ -1000,7 +1002,8 @@ body {
   margin: 20px auto;
   /*centro la pagina*/
   grid-gap: 10px;
-  /*espaciado entre secciones*/ }
+  /*espaciado entre secciones*/
+  z-index: 100; }
 
 .contacto-principal {
   grid-area: contacto;
@@ -1242,7 +1245,8 @@ body {
   margin: 20px auto;
   /*centro la pagina*/
   grid-gap: 10px;
-  /*espaciado entre secciones*/ }
+  /*espaciado entre secciones*/
+  z-index: 100; }
 
 .fotos-principal {
   grid-area: fotos;

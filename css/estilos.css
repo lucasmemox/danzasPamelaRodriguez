@@ -114,6 +114,14 @@ body {
   background-color: #278ce6 !important;
   font-size: 1.5rem !important; }
 
+.fondo-total {
+  background: #3494e6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ec6ead, #3494e6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ec6ead, #3494e6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
 .img-slide {
   height: 500px;
   width: 700px; }
@@ -1499,4 +1507,14 @@ body {
           width: 110px;
           /* Para que no se rompa en dos líneas, y lo translade tal cual. */
           left: 50%;
-          transform: translateX(-50%); } }
+          transform: translateX(-50%); }
+  .titulo-jazz {
+    position: absolute;
+    /*Margenes*/
+    top: 40px !important;
+    left: 80px !important;
+    bottom: 25px !important;
+    right: 20px !important;
+    /*tamaño*/
+    width: 150px;
+    height: 70px; } }

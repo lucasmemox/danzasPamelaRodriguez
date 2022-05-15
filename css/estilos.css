@@ -1517,4 +1517,36 @@ body {
     right: 20px !important;
     /*tamaño*/
     width: 150px;
-    height: 70px; } }
+    height: 70px; }
+  .titulo-folclore {
+    position: absolute;
+    /*Margenes*/
+    top: 40px !important;
+    left: 30% !important;
+    bottom: 25px !important;
+    right: 10% !important;
+    /*tamaño*/
+    width: 150px !important;
+    height: 70px; }
+    .titulo-folclore p {
+      font-weight: 700;
+      font-size: 2rem !important;
+      margin: 0 auto;
+      /* Centro */
+      margin-top: 20px;
+      text-align: center; }
+  .text-folclore .idc-box {
+    margin-left: 5px !important;
+    background-size: contain;
+    background-repeat: repeat;
+    font-size: 80% !important;
+    padding: 10px;
+    width: 350px !important;
+    height: auto;
+    font-weight: 300; }
+    .text-folclore .idc-box .idc-titulo {
+      display: flex;
+      flex-direction: row;
+      font-weight: 700;
+      text-align: center;
+      color: white; } }

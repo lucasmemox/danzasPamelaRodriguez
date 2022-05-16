@@ -1,7 +1,7 @@
 /* -- MOBILE -- */
 @media (max-width: 500px) {
   /*ACÁ LE DIGO QUE CUANDO LA PANTALLA SEA MENOR A 576 LAS COSAS SE ACOMODEN DIFERENTE*/
-  .logo-imagen{
+  .logo-imagen {
     width: 100px;
     height: 50px;
   }
@@ -21,6 +21,26 @@
     grid-template-rows: repeat(3, auto);
   }
 
+  .contenedor-fotos-grid {
+    display: grid;
+    /*utilizo grid*/
+    grid-template-areas:
+      "cabecera"
+      "fotos"
+      "piepagina";
+    grid-template-columns: repeat(1, 100%);
+    /*Son 3 las columnas*/
+    grid-template-rows: repeat(3, auto);
+    /*Son 3 las Filas*/
+  }
+
+  .fotos-principal {
+    p {
+      font-weight: 700;
+      font-size: 2.4rem;
+    }
+  }
+
   .contenedor-conoceme-grid {
     display: grid;
     // utilizo grid
@@ -32,7 +52,7 @@
     // Son 3 las columnas
     grid-template-rows: repeat(3, auto);
     // Son 3 las Filas
-   }
+  }
 
   .piepagina-contenedor {
     grid-template-areas:
@@ -210,14 +230,12 @@
       margin-top: 20px;
       text-align: center;
     }
-
-
   }
 
   .text-folclore {
     .idc-box {
       // background: #f9f9f9 none repeat scroll 0 0;
-     
+
       margin-left: 5px !important;
       background-size: contain;
       background-repeat: repeat;

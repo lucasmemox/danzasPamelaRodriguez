@@ -1419,6 +1419,17 @@ body {
     grid-template-columns: repeat(1, auto);
     /*Son 3 las columnas*/
     grid-template-rows: repeat(3, auto); }
+  .contenedor-fotos-grid {
+    display: grid;
+    /*utilizo grid*/
+    grid-template-areas: "cabecera" "fotos" "piepagina";
+    grid-template-columns: repeat(1, 100%);
+    /*Son 3 las columnas*/
+    grid-template-rows: repeat(3, auto);
+    /*Son 3 las Filas*/ }
+  .fotos-principal p {
+    font-weight: 700;
+    font-size: 2.4rem; }
   .contenedor-conoceme-grid {
     display: grid;
     grid-template-areas: "cabecera" "conoceme" "piepagina";

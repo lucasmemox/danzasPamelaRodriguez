@@ -1408,10 +1408,21 @@ body {
 /* -- MOBILE -- */
 @media (max-width: 500px) {
   /*ACÁ LE DIGO QUE CUANDO LA PANTALLA SEA MENOR A 576 LAS COSAS SE ACOMODEN DIFERENTE*/
+  .logo-imagen {
+    width: 100px;
+    height: 50px; }
+  .logo-pie {
+    width: 100px;
+    height: 50px; }
   .contenedor-grid {
     grid-template-areas: "cabecera" "principal" "piepagina";
     grid-template-columns: repeat(1, auto);
     /*Son 3 las columnas*/
+    grid-template-rows: repeat(3, auto); }
+  .contenedor-conoceme-grid {
+    display: grid;
+    grid-template-areas: "cabecera" "conoceme" "piepagina";
+    grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(3, auto); }
   .piepagina-contenedor {
     grid-template-areas: "info-pie" "clases-pie" "horarios-pie" "derechos-pie";
@@ -1464,7 +1475,7 @@ body {
     height: 450px; }
   .img-pamela {
     width: 310px !important;
-    height: 450px;
+    height: 440px !important;
     align-self: center !important; }
   .img-inscripcion2022 {
     height: 150px;

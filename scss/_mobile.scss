@@ -54,6 +54,19 @@
     // Son 3 las Filas
   }
 
+  .contenedor-contacto-grid {
+    display: grid;
+    /*utilizo grid*/
+    grid-template-areas:
+      "cabecera"
+      "contacto"
+      "piepagina";
+    grid-template-columns: repeat(1, 100%);
+    /*Son 3 las columnas*/
+    grid-template-rows: repeat(3, auto);
+  }  
+
+
   .piepagina-contenedor {
     grid-template-areas:
       "info-pie"

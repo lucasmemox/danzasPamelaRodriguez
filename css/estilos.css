@@ -1409,11 +1409,9 @@ body {
 @media (max-width: 500px) {
   /*ACÁ LE DIGO QUE CUANDO LA PANTALLA SEA MENOR A 576 LAS COSAS SE ACOMODEN DIFERENTE*/
   .logo-imagen {
-    width: 100px;
-    height: 50px; }
+    width: 100px; }
   .logo-pie {
-    width: 100px;
-    height: 50px; }
+    width: 100px; }
   .contenedor-grid {
     grid-template-areas: "cabecera" "principal" "piepagina";
     grid-template-columns: repeat(1, auto);

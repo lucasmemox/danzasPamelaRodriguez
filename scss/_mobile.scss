@@ -73,11 +73,22 @@
       "cabecera"
       "inscripcion"
       "piepagina";
-    grid-template-columns: repeat(3, 100%);
+    grid-template-columns: repeat(1, 100%);
     /*Son 3 las columnas*/
     grid-template-rows: repeat(3, auto);
    }
 
+   .contenedor-folclore-grid {
+    display: grid;
+    /*utilizo grid*/
+    grid-template-areas:
+      "cabecera"
+      "folclore"
+      "piepagina";
+    grid-template-columns: repeat(1, 100%);
+    /*Son 3 las columnas*/
+    grid-template-rows: repeat(3, auto);
+   }  
 
   .piepagina-contenedor {
     grid-template-areas:

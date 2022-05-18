@@ -753,14 +753,14 @@ body {
   .titulo-conoceme h2 {
     margin-bottom: 30px;
     /*separo el h2 del contenido*/
-    color: white;
+    color: #4193bf;
     font-weight: 700;
     font-size: 3rem;
     margin: 0 auto;
     /* Centro */
     margin-top: 20px;
     text-align: center;
-    text-shadow: 2px 2px #b0059b; }
+    text-shadow: 2px 2px white; }
 
 .cuadricula {
   width: 600px;

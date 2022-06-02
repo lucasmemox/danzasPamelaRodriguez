@@ -291,6 +291,28 @@ body {
   margin-right: 70px;
   margin-top: 20px;
   cursor: pointer; }
+  .caja .cajaTitulo {
+    color: #fff;
+    border-top: 30px; }
+  .caja .cajaCosto {
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px; }
+  .caja .botonCRR {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.625rem 1.875rem;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    position: absolute;
+    float: left; }
 
 .encabezado {
   display: flex;

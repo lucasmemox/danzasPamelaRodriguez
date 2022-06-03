@@ -289,30 +289,43 @@ body {
   /*Separo las cajas*/
   margin-left: 70px;
   margin-right: 70px;
-  margin-top: 20px;
-  cursor: pointer; }
-  .caja .cajaTitulo {
-    color: #fff;
-    border-top: 30px; }
-  .caja .cajaCosto {
-    display: block;
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 10px; }
-  .caja .botonCRR {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    border: 1px solid transparent;
-    padding: 0.625rem 1.875rem;
-    border-radius: 3px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 14px;
-    cursor: pointer;
-    position: absolute;
-    float: left; }
+  margin-top: 40px;
+  margin-bottom: 60px; }
+  .caja .img-contenedor {
+    position: relative; }
+    .caja .img-contenedor .tituloCaja {
+      color: #fff;
+      border-top: 30px; }
+    .caja .img-contenedor .cajaCosto {
+      display: block;
+      font-size: 30px;
+      font-weight: 600;
+      margin-bottom: 10px; }
+    .caja .img-contenedor .botonCRR {
+      position: absolute;
+      top: 65%;
+      left: 35%;
+      bottom: 25px;
+      right: 200px;
+      width: 100px;
+      height: 50px;
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      align-items: center;
+      justify-content: center;
+      cursor: pointer; }
+    .caja .img-contenedor .crr {
+      margin-bottom: 100px;
+      /*separo el h2 del contenido*/
+      color: #182E64;
+      font-weight: 400;
+      font-size: 2rem;
+      margin: 0 auto;
+      /* Centro */
+      align-items: center;
+      justify-content: center; }
 
 .encabezado {
   display: flex;
@@ -361,14 +374,8 @@ body {
   font-weight: 700;
   font-size: 2.5rem; }
 
-.img-clases:hover {
-  -webkit-transform: scale(0.8);
-  transform: scale(0.8);
-  -webkit-transition: all 3s;
-  transition: all 3s;
-  opacity: 0.8; }
-
 .img-clases {
+  position: relative;
   width: 300px;
   height: 300px;
   border-radius: 12px;

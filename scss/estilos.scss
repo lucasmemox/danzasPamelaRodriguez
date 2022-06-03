@@ -335,36 +335,56 @@ body {
   /*Separo las cajas*/
   margin-left: 70px;
   margin-right: 70px;
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 60px;
 
-  cursor: pointer;
+  .img-contenedor {
+    position: relative;
+    
+    .tituloCaja{
+      color: #fff;
+      border-top: 30px;
+    }
 
-  .cajaTitulo {
-    color: #fff;
-    border-top: 30px;
-  }
+    .cajaCosto {
+      display: block;
+      font-size: 30px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
 
-  .cajaCosto {
-    display: block;
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
+    .botonCRR {
+      position: absolute;
+      top: 65%;
+      left: 35%;
+      bottom: 25px;
+      right: 200px;
+      width: 100px;
+      height: 50px;
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
 
-  .botonCRR {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    border: 1px solid transparent;
-    padding: 0.625rem 1.875rem;
-    border-radius: 3px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 14px;
-    cursor: pointer;
-    position: absolute;
-    float: left;
+    .crr {
+      margin-bottom: 100px;
+      /*separo el h2 del contenido*/
+      color: #182E64;
+      font-weight: 400;
+      font-size: 2rem;
+      margin: 0 auto;
+      /* Centro */
+      // margin-top: 50px;
+      // text-align: center;
+      align-items: center;
+      justify-content: center
+  
+      // text-shadow: $sombraH2;
+    }
   }
 }
 
@@ -422,15 +442,16 @@ body {
   font-size: 2.5rem;
 }
 
-.img-clases:hover {
-  -webkit-transform: scale(0.8);
-  transform: scale(0.8);
-  -webkit-transition: all 3s;
-  transition: all 3s;
-  opacity: 0.8;
-}
+// .img-clases:hover {
+//   -webkit-transform: scale(0.8);
+//   transform: scale(0.8);
+//   -webkit-transition: all 3s;
+//   transition: all 3s;
+//   opacity: 0.8;
+// }
 
 .img-clases {
+  position: relative;
   width: 300px;
   height: 300px;
   border-radius: 12px;

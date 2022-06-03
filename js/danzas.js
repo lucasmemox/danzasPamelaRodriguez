@@ -18,7 +18,6 @@ const danzas2 = new Danzas(
 );
 const danzas3 = new Danzas(
   "Danzas Españolas",
-  "Horarios: 17:00 a 21:00 de Lunes a Viernes",
   "./imagenes/oferta/español.png",
   3500
 );
@@ -45,10 +44,13 @@ listado.forEach((listado) => {
   const tarjeta = document.createElement("div");
   tarjeta.className = "caja";
   tarjeta.innerHTML = `
-            <h3 class="cajaTitulo">${listado.estilos}</h3>
+            
+            <div class="img-contenedor">
+            <h3 class="tituloCaja">${listado.estilos} <br>
+                                   Cuota $${listado.costo}</h3>
             <img src="${listado.imagen}" class="img-clases">
-            <span class="cajaCosto">$${listado.costo}</span>
-            <button class="botonCRR"> Agregar al Carrito </button>
+            <button class="botonCRR"><span class="crr">Agregar</span></button>
+            </div>
         `;
   cardContainer.append(tarjeta);
 });

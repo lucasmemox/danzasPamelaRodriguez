@@ -1,3 +1,4 @@
+//Defino la clase
 class Danzas {
   constructor(estilos, imagen, costo) {
     this.estilos = estilos;
@@ -6,32 +7,24 @@ class Danzas {
   }
 }
 
+//Defino las clases ofrecidas por la academia
 const danzas1 = new Danzas("Clásico", "./imagenes/oferta/clasico.png", 3000);
-const danzas2 = new Danzas(
-  "Folclore Tradicional",
-  "./imagenes/oferta/folclore.png",
-  5000
-);
-const danzas3 = new Danzas(
-  "Danzas Españolas",
-  "./imagenes/oferta/español.png",
-  3500
-);
-const danzas4 = new Danzas(
-  "Ritmos Libres",
-  "./imagenes/oferta/libres.png",
-  3500
-);
+const danzas2 = new Danzas("Folclore Tradicional","./imagenes/oferta/folclore.png",5000);
+const danzas3 = new Danzas("Danzas Españolas","./imagenes/oferta/español.png",3500);
+const danzas4 = new Danzas("Ritmos Libres","./imagenes/oferta/libres.png",3500);
 const danzas5 = new Danzas("Jazz", "./imagenes/oferta/Jazz.png", 3700);
-const danzas6 = new Danzas(
-  "Entrenamiento Funcional",
-  "./imagenes/oferta/funcional.png",
-  4000
-);
+const danzas6 = new Danzas("Entrenamiento Funcional","./imagenes/oferta/funcional.png",4000);
 
+//Creo el array de clases de danza
 const listado = [danzas1, danzas2, danzas3, danzas4, danzas5, danzas6];
+
+//Creo el carrito vacio -  es un array
+let carrito = [];
+
+//Aca tomo el id de la clase padre donde voy a mostrar las clases 
 const cardContainer = document.getElementById("contenedor-principal");
 
+//Genero las clases con el for each
 listado.forEach((listado) => {
   const tarjeta = document.createElement("div");
   tarjeta.className = "caja";
@@ -46,6 +39,13 @@ listado.forEach((listado) => {
         `;
   cardContainer.append(tarjeta);
 });
+
+
+// Accedo al botón a traves de la clase botonCRR y le agregamos el evento click
+const btnComprar = document.querySelectorAll('.botonCRR')
+btnComprar.forEach((btnCompra) => {
+    btnCompra.addEventListener('click', agregarDanzas)
+})
 
 // FUNCIONES
 
@@ -86,22 +86,28 @@ if (tipo == false) {
         nombre + " El Profesorado de Jazz cuesta 3700 y con beca " + descuentoj
       );
       break;
-      case "J":
+    case "J":
       let descuentol = descuento("L");
       alert(
-        nombre + " El Profesorado de Ritmos Libres cuesta 3500 y con beca " + descuentol
+        nombre +
+          " El Profesorado de Ritmos Libres cuesta 3500 y con beca " +
+          descuentol
       );
       break;
-      case "J":
+    case "J":
       let descuentofu = descuento("FU");
       alert(
-        nombre + " Entrenamiento funcional cuesta 4000 con descuento " + descuentofu
+        nombre +
+          " Entrenamiento funcional cuesta 4000 con descuento " +
+          descuentofu
       );
       break;
-      case "J":
+    case "J":
       let descuentoc = descuento("C");
       alert(
-        nombre + " El Profesorado de Danzas Clasicas cuesta 3000 y con beca " + descuentoc
+        nombre +
+          " El Profesorado de Danzas Clasicas cuesta 3000 y con beca " +
+          descuentoc
       );
       break;
     default:
@@ -134,7 +140,7 @@ function descuento(curso) {
     let monto = 3500;
     let descuento = 16;
 
-    let montodescontado = (monto * descuento) / 1000;
+    let montodescontado = (monto * descuento) / 100;
 
     let total = monto - montodescontado;
     return total;
@@ -142,24 +148,23 @@ function descuento(curso) {
     let monto = 3000;
     let descuento = 20;
 
-    let montodescontado = (monto * descuento) / 1000;
+    let montodescontado = (monto * descuento) / 100;
 
     let total = monto - montodescontado;
     return total;
-  }else if (curso == "L") {
+  } else if (curso == "L") {
     let monto = 3500;
     let descuento = 20;
 
-    let montodescontado = (monto * descuento) / 1000;
+    let montodescontado = (monto * descuento) / 100;
 
     let total = monto - montodescontado;
     return total;
-  }
-  else if (curso == "FU") {
+  } else if (curso == "FU") {
     let monto = 4000;
     let descuento = 10;
 
-    let montodescontado = (monto * descuento) / 1000;
+    let montodescontado = (monto * descuento) / 100;
 
     let total = monto - montodescontado;
     return total;

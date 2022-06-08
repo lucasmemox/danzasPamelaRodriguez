@@ -42,22 +42,23 @@ listado.forEach((listado) => {
 });
 
 
-// Accedo al botón a traves de la clase botonCRR y le agregamos el evento click
-const btnComprar = document.querySelectorAll('.botonCRR')
-btnComprar.forEach((btnCompra) => {
-    btnCompra.addEventListener('click', agregarDanza)
-})
-
 // Función para agregar clase e identificar cual es la seleccionada. 
 const agregarDanza = (e) => {
   // Con target accedo  a la etiqueta del button y con getAttribute accedemos al atributo
   const claseElegida = e.target.getAttribute('id-clase')
   // Una vez que tenemos el valor de referencia que guardamos en el boton hacemos una busqueda (find)
-  const listado = listado.find((listado) => listado.id ==  claseElegida)
+  const ingresos = listado.find((ingresos) => ingresos.id ==  claseElegida)
   // Una vez tenemos todo el objeto, lo enviamos al carrito
-  carrito.push(listado)
+  carrito.push(ingresos)
   console.log(carrito)
 }
+
+// Accedo al botón a traves de la clase botonCRR y le agregamos el evento click
+const btnComprar = document.querySelectorAll('.botonCRR')
+btnComprar.forEach((btnCompra) => {
+    btnCompra.addEventListener('click', agregarDanza)
+    console.log(btnComprar)
+})
 
 // FUNCIONES
 

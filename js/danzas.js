@@ -1,6 +1,7 @@
 //Defino la clase
 class Danzas {
-  constructor(estilos, imagen, costo) {
+  constructor(id, estilos, imagen, costo) {
+    this.id = id;
     this.estilos = estilos;
     this.imagen = imagen;
     this.costo = costo;
@@ -8,12 +9,12 @@ class Danzas {
 }
 
 //Defino las clases ofrecidas por la academia
-const danzas1 = new Danzas("Clásico", "./imagenes/oferta/clasico.png", 3000);
-const danzas2 = new Danzas("Folclore Tradicional","./imagenes/oferta/folclore.png",5000);
-const danzas3 = new Danzas("Danzas Españolas","./imagenes/oferta/español.png",3500);
-const danzas4 = new Danzas("Ritmos Libres","./imagenes/oferta/libres.png",3500);
-const danzas5 = new Danzas("Jazz", "./imagenes/oferta/Jazz.png", 3700);
-const danzas6 = new Danzas("Entrenamiento Funcional","./imagenes/oferta/funcional.png",4000);
+const danzas1 = new Danzas(1,"Clásico", "./imagenes/oferta/clasico.png", 3000);
+const danzas2 = new Danzas(2,"Folclore Tradicional","./imagenes/oferta/folclore.png",5000);
+const danzas3 = new Danzas(3,"Danzas Españolas","./imagenes/oferta/español.png",3500);
+const danzas4 = new Danzas(4,"Ritmos Libres","./imagenes/oferta/libres.png",3500);
+const danzas5 = new Danzas(5,"Jazz", "./imagenes/oferta/Jazz.png", 3700);
+const danzas6 = new Danzas(6,"Entrenamiento Funcional","./imagenes/oferta/funcional.png",4000);
 
 //Creo el array de clases de danza
 const listado = [danzas1, danzas2, danzas3, danzas4, danzas5, danzas6];
@@ -34,7 +35,7 @@ listado.forEach((listado) => {
             <h3 class="tituloCaja">${listado.estilos} <br>
                                    Cuota $${listado.costo}</h3>
             <img src="${listado.imagen}" class="img-clases">
-            <button class="botonCRR"><span class="crr">Agregar</span></button>
+            <button id-clase="${listado.id}" class="botonCRR"><span class="crr">Agregar</span></button>
             </div>
         `;
   cardContainer.append(tarjeta);
@@ -44,8 +45,19 @@ listado.forEach((listado) => {
 // Accedo al botón a traves de la clase botonCRR y le agregamos el evento click
 const btnComprar = document.querySelectorAll('.botonCRR')
 btnComprar.forEach((btnCompra) => {
-    btnCompra.addEventListener('click', agregarDanzas)
+    btnCompra.addEventListener('click', agregarDanza)
 })
+
+// Función para agregar clase e identificar cual es la seleccionada. 
+const agregarDanza = (e) => {
+  // Con target accedo  a la etiqueta del button y con getAttribute accedemos al atributo
+  const claseElegida = e.target.getAttribute('id-clase')
+  // Una vez que tenemos el valor de referencia que guardamos en el boton hacemos una busqueda (find)
+  const listado = listado.find((listado) => listado.id ==  claseElegida)
+  // Una vez tenemos todo el objeto, lo enviamos al carrito
+  carrito.push(listado)
+  console.log(carrito)
+}
 
 // FUNCIONES
 

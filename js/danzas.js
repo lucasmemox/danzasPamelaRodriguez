@@ -9,15 +9,15 @@ class Danzas {
 }
 
 //Defino las clases ofrecidas por la academia
-const danzas1 = new Danzas(1,"Clásico", "./imagenes/oferta/clasico.png", 3000);
-const danzas2 = new Danzas(2,"Folclore Tradicional","./imagenes/oferta/folclore.png",5000);
-const danzas3 = new Danzas(3,"Danzas Españolas","./imagenes/oferta/español.png",3500);
-const danzas4 = new Danzas(4,"Ritmos Libres","./imagenes/oferta/libres.png",3500);
-const danzas5 = new Danzas(5,"Jazz", "./imagenes/oferta/Jazz.png", 3700);
-const danzas6 = new Danzas(6,"Entrenamiento Funcional","./imagenes/oferta/funcional.png",4000);
+const clasico = new Danzas(1,"Clásico", "./imagenes/oferta/clasico.png", 3000);
+const folclore = new Danzas(2,"Folclore Tradicional","./imagenes/oferta/folclore.png",5000);
+const espaniol = new Danzas(3,"Danzas Españolas","./imagenes/oferta/español.png",3500);
+const rlibres = new Danzas(4,"Ritmos Libres","./imagenes/oferta/libres.png",3500);
+const djazz = new Danzas(5,"Jazz", "./imagenes/oferta/Jazz.png", 3700);
+const efuncional = new Danzas(6,"Entrenamiento Funcional","./imagenes/oferta/funcional.png",4000);
 
 //Creo el array de clases de danza
-const listado = [danzas1, danzas2, danzas3, danzas4, danzas5, danzas6];
+const listado = [clasico, folclore, espaniol, rlibres, djazz, efuncional];
 
 //Creo el carrito vacio -  es un array
 let carrito = [];
@@ -25,6 +25,8 @@ let carrito = [];
 //Aca tomo el id de la clase padre donde voy a mostrar las clases 
 // const cardContainer = document.getElementById("contenedor-principal");
 const cardContainer = document.querySelector('#contenedor-principal');
+
+const crrseleccion = document.querySelector('#crrseleccion');
 
 //Genero las clases con el for each
 listado.forEach((tarjetas) => {
@@ -36,14 +38,12 @@ listado.forEach((tarjetas) => {
             <h3 class="tituloCaja">${tarjetas.estilos} <br>
                                    Cuota $${tarjetas.costo}</h3>
             <img src="${tarjetas.imagen}" class="img-clases">
-            <button id="${tarjetas.id}" class="botonCRR"><span class="crr">Agregar</span></button>
+            <button id-danza="${tarjetas.id}" class="botonCRR"><span class="crr">Agregar</span></button>
             </div>
         `;
   cardContainer.append(tarjeta);
   console.log(tarjetas);
 });
-
-const crrseleccion = document.querySelector('#crrseleccion');
 
 const imprimirCarrito = () => {
   crrseleccion.innerHTML = ''
@@ -65,15 +65,12 @@ const imprimirCarrito = () => {
 // Función para agregar clase e identificar cual es la seleccionada. 
 const agregarDanza = (e) => {
   // Con target accedo  a la etiqueta del button y con getAttribute accedemos al atributo
-  const claseElegida = e.target.getAttribute('id')
-  console.log(claseElegida);
+  const claseElegida = e.target.closest('.botonCRR').getAttribute('id-danza')
   // Una vez que tenemos el valor de referencia que guardamos en el botón hacemos una búsqueda (find)
-  const tarjetas = listado.find((tarjetas) => tarjetas.id ==  claseElegida)
-  console.log(tarjetas);
+  const agregarRender = listado.find((tarjetas) => tarjetas.id ==  claseElegida)
   // Una vez tenemos todo el objeto, lo enviamos al carrito
-  carrito.push(tarjetas)
-  console.log("CARRITO" + carrito);
-  // imprimirCarrito()
+  carrito.push(agregarRender)
+  imprimirCarrito()
   localStorage.setItem('carrito', JSON.stringify(carrito))
 }
 
@@ -81,7 +78,6 @@ const agregarDanza = (e) => {
 const btnComprar = document.querySelectorAll('.botonCRR')
 btnComprar.forEach((btnCompra) => {
     btnCompra.addEventListener('click', agregarDanza)
-    console.log(btnCompra);
 })
 
 // Al cargar la pagina, verifico que exista algo guardado en el carrito y lo imprimo

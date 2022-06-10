@@ -36,12 +36,12 @@ listado.forEach((tarjetas) => {
             <h3 class="tituloCaja">${tarjetas.estilos} <br>
                                    Cuota $${tarjetas.costo}</h3>
             <img src="${tarjetas.imagen}" class="img-clases">
-            <button id-clase="${tarjetas.id}" class="botonCRR"><span class="crr">Agregar</span></button>
+            <button id="${tarjetas.id}" class="botonCRR"><span class="crr">Agregar</span></button>
             </div>
         `;
   cardContainer.append(tarjeta);
+  console.log(tarjetas);
 });
-console.log(listado);
 
 const crrseleccion = document.querySelector('#crrseleccion');
 
@@ -65,12 +65,15 @@ const imprimirCarrito = () => {
 // Función para agregar clase e identificar cual es la seleccionada. 
 const agregarDanza = (e) => {
   // Con target accedo  a la etiqueta del button y con getAttribute accedemos al atributo
-  const claseElegida = e.target.getAttribute('id-clase')
+  const claseElegida = e.target.getAttribute('id')
+  console.log(claseElegida);
   // Una vez que tenemos el valor de referencia que guardamos en el botón hacemos una búsqueda (find)
-  const listado = listado.find((tarjetas) => tarjetas.id ==  claseElegida)
+  const tarjetas = listado.find((tarjetas) => tarjetas.id ==  claseElegida)
+  console.log(tarjetas);
   // Una vez tenemos todo el objeto, lo enviamos al carrito
-  carrito.push(listado)
-  imprimirCarrito()
+  carrito.push(tarjetas)
+  console.log("CARRITO" + carrito);
+  // imprimirCarrito()
   localStorage.setItem('carrito', JSON.stringify(carrito))
 }
 
@@ -78,6 +81,7 @@ const agregarDanza = (e) => {
 const btnComprar = document.querySelectorAll('.botonCRR')
 btnComprar.forEach((btnCompra) => {
     btnCompra.addEventListener('click', agregarDanza)
+    console.log(btnCompra);
 })
 
 // Al cargar la pagina, verifico que exista algo guardado en el carrito y lo imprimo
@@ -85,6 +89,9 @@ if (localStorage.getItem('carrito')) {
   carrito = JSON.parse(localStorage.getItem('carrito'))
   imprimirCarrito()
 }
+
+
+
 
 // FUNCIONES
 

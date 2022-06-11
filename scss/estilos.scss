@@ -404,11 +404,12 @@ body {
   .cartRow {
     display: flex;
     border: 1px solid gray;
-    width: 90%;
+    width: 70%;
     padding: 20px 10px;
     justify-content: center;
     align-items: center;
     color: #fff;
+    margin-bottom: 10px;
     
     .cartImagen {
 
@@ -428,7 +429,6 @@ body {
       width: 200px;
       text-align: center;  
       font-size: 1.75rem    
-      
     }
 
     .cartMonto {
@@ -436,8 +436,6 @@ body {
       text-align: center;
       font-size: 1.75rem      
       }
-
-    
   }
 }
 

@@ -347,11 +347,12 @@ body {
   .crrseleccion .cartRow {
     display: flex;
     border: 1px solid gray;
-    width: 90%;
+    width: 70%;
     padding: 20px 10px;
     justify-content: center;
     align-items: center;
-    color: #fff; }
+    color: #fff;
+    margin-bottom: 10px; }
     .crrseleccion .cartRow .cartImagen {
       width: 200px; }
       .crrseleccion .cartRow .cartImagen .tarjetaImagen {

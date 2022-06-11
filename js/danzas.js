@@ -71,7 +71,6 @@ const agregarDanza = (e) => {
   // Una vez tenemos todo el objeto, lo enviamos al carrito
   console.log(agregarRender)
   carrito.push(agregarRender)
-  console.log("CARRITO:" + carrito )
   imprimirCarrito()
   localStorage.setItem('carrito', JSON.stringify(carrito))
 }
@@ -88,6 +87,18 @@ if (localStorage.getItem('carrito')) {
   imprimirCarrito()
 }
 
+// Botón de Vaciar Carrito
+
+const vaciarCarrito = () => {
+  if (localStorage.getItem('carrito')) {
+      localStorage.removeItem('carrito')
+  }
+  carrito = []
+  imprimirCarrito()
+}
+
+const vaciarCarritoBtn = document.querySelector('#vaciarCarrito')
+vaciarCarritoBtn.addEventListener('click', vaciarCarrito)
 
 
 

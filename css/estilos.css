@@ -279,6 +279,16 @@ body {
   justify-content: space-evenly;
   /*trabaja a nivel de fila la separacion*/
   background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000); }
+  .contenedor-principal .crrseleccion {
+    margin-bottom: 100px;
+    /*separo el h2 del contenido*/
+    color: #182E64;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0 auto;
+    /* Centro */
+    align-items: center;
+    justify-content: center; }
 
 .caja {
   width: 300px;
@@ -316,16 +326,6 @@ body {
       align-items: center;
       justify-content: center;
       cursor: pointer; }
-    .caja .img-contenedor .crr {
-      margin-bottom: 100px;
-      /*separo el h2 del contenido*/
-      color: #182E64;
-      font-weight: 400;
-      font-size: 2rem;
-      margin: 0 auto;
-      /* Centro */
-      align-items: center;
-      justify-content: center; }
 
 .encabezado {
   display: flex;

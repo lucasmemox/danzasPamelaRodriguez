@@ -397,27 +397,25 @@ body {
   display: flex;
   flex-wrap: wrap;
   /*Para que se posicionen abajo cuando no entran*/
-  flex-direction: row;
-  /*pongo en fila*/
-
-  justify-content: space-evenly;
-  /*trabaja a nivel de fila la separacion*/
-
+  flex-direction: row;  /*pongo en fila*/
+  justify-content: space-evenly;  /*trabaja a nivel de fila la separacion*/
   background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000);
 
   .cartRow {
+    display: flex;
     border: 1px solid gray;
-    width: 70%;
+    width: 90%;
     padding: 20px 10px;
     justify-content: center;
     align-items: center;
-
+    color: #fff;
+    
     .cartImagen {
-      
-      width: 35%;
 
+      width: 200px;
+      
       .tarjetaImagen {
-        width: 30%;
+        width: 190px;
         border-radius: 12px;
         border-color: antiquewhite;
         border-style: solid;
@@ -427,12 +425,19 @@ body {
     }
 
     .cartTitulo {
-      width: 35%;
+      width: 200px;
+      text-align: center;  
+      font-size: 1.75rem    
+      
     }
 
     .cartMonto {
-      width: 35%;
-    }
+      width: 200px;
+      text-align: center;
+      font-size: 1.75rem      
+      }
+
+    
   }
 }
 

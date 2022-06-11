@@ -345,24 +345,30 @@ body {
   /*trabaja a nivel de fila la separacion*/
   background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000); }
   .crrseleccion .cartRow {
+    display: flex;
     border: 1px solid gray;
-    width: 70%;
+    width: 90%;
     padding: 20px 10px;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    color: #fff; }
     .crrseleccion .cartRow .cartImagen {
-      width: 35%; }
+      width: 200px; }
       .crrseleccion .cartRow .cartImagen .tarjetaImagen {
-        width: 30%;
+        width: 190px;
         border-radius: 12px;
         border-color: antiquewhite;
         border-style: solid;
         border-width: 9px;
         box-shadow: 5px 6px 7px 0px grey; }
     .crrseleccion .cartRow .cartTitulo {
-      width: 35%; }
+      width: 200px;
+      text-align: center;
+      font-size: 1.75rem; }
     .crrseleccion .cartRow .cartMonto {
-      width: 35%; }
+      width: 200px;
+      text-align: center;
+      font-size: 1.75rem; }
 
 .encabezado {
   display: flex;

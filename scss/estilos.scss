@@ -324,20 +324,6 @@ body {
   /*trabaja a nivel de fila la separacion*/
 
   background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000);
-
-  .crrseleccion {
-    margin-bottom: 100px;
-    /*separo el h2 del contenido*/
-    color: #182E64;
-    font-weight: 400;
-    font-size: 2rem;
-    margin: 0 auto;
-    /* Centro */
-    // margin-top: 50px;
-    // text-align: center;
-    align-items: center;
-    justify-content: center
-  }
 }
 
 .caja {
@@ -354,8 +340,8 @@ body {
 
   .img-contenedor {
     position: relative;
-    
-    .tituloCaja{
+
+    .tituloCaja {
       color: #fff;
       border-top: 30px;
     }
@@ -365,6 +351,18 @@ body {
       font-size: 30px;
       font-weight: 600;
       margin-bottom: 10px;
+    }
+
+    .crr {
+      margin-bottom: 100px;
+      /*separo el h2 del contenido*/
+      color: #182e64;
+      font-weight: 400;
+      font-size: 2rem;
+      margin: 0 auto;
+      /* Centro */
+      align-items: center;
+      justify-content: center;
     }
 
     .botonCRR {
@@ -382,6 +380,58 @@ body {
       align-items: center;
       justify-content: center;
       cursor: pointer;
+    }
+  }
+}
+
+.divisionCarrito{
+  position: absolute;
+  width: 100%;
+  top: 2em;
+  margin-bottom: 2em;
+}
+
+.crrseleccion {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /*Para que se posicionen abajo cuando no entran*/
+  flex-direction: row;
+  /*pongo en fila*/
+
+  justify-content: space-evenly;
+  /*trabaja a nivel de fila la separacion*/
+
+  background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000);
+
+  .cartRow {
+    border: 1px solid gray;
+    width: 70%;
+    padding: 20px 10px;
+    justify-content: center;
+    align-items: center;
+
+    .cartImagen {
+      
+      width: 35%;
+
+      .tarjetaImagen {
+        width: 30%;
+        border-radius: 12px;
+        border-color: antiquewhite;
+        border-style: solid;
+        border-width: 9px;
+        box-shadow: 5px 6px 7px 0px grey;
+      }
+    }
+
+    .cartTitulo {
+      width: 35%;
+    }
+
+    .cartMonto {
+      width: 35%;
     }
   }
 }

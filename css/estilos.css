@@ -301,6 +301,16 @@ body {
       font-size: 30px;
       font-weight: 600;
       margin-bottom: 10px; }
+    .caja .img-contenedor .crr {
+      margin-bottom: 100px;
+      /*separo el h2 del contenido*/
+      color: #182e64;
+      font-weight: 400;
+      font-size: 2rem;
+      margin: 0 auto;
+      /* Centro */
+      align-items: center;
+      justify-content: center; }
     .caja .img-contenedor .botonCRR {
       position: absolute;
       top: 65%;
@@ -316,16 +326,43 @@ body {
       align-items: center;
       justify-content: center;
       cursor: pointer; }
-    .caja .img-contenedor .crr {
-      margin-bottom: 100px;
-      /*separo el h2 del contenido*/
-      color: #182E64;
-      font-weight: 400;
-      font-size: 2rem;
-      margin: 0 auto;
-      /* Centro */
-      align-items: center;
-      justify-content: center; }
+
+.divisionCarrito {
+  position: absolute;
+  width: 100%;
+  top: 2em;
+  margin-bottom: 2em; }
+
+.crrseleccion {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /*Para que se posicionen abajo cuando no entran*/
+  flex-direction: row;
+  /*pongo en fila*/
+  justify-content: space-evenly;
+  /*trabaja a nivel de fila la separacion*/
+  background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000); }
+  .crrseleccion .cartRow {
+    border: 1px solid gray;
+    width: 70%;
+    padding: 20px 10px;
+    justify-content: center;
+    align-items: center; }
+    .crrseleccion .cartRow .cartImagen {
+      width: 35%; }
+      .crrseleccion .cartRow .cartImagen .tarjetaImagen {
+        width: 30%;
+        border-radius: 12px;
+        border-color: antiquewhite;
+        border-style: solid;
+        border-width: 9px;
+        box-shadow: 5px 6px 7px 0px grey; }
+    .crrseleccion .cartRow .cartTitulo {
+      width: 35%; }
+    .crrseleccion .cartRow .cartMonto {
+      width: 35%; }
 
 .encabezado {
   display: flex;

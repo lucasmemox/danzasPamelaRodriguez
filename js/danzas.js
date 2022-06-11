@@ -52,7 +52,7 @@ const imprimirCarrito = () => {
         cartRow.className = 'cartRow'
         cartRow.innerHTML = `
         <div class="cartImg">
-        <img src="${tarjetas.imagen}">
+          <img class="tarjetaImagen" src="${tarjetas.imagen}">
         </div>
         <div class="cartTitle"><span> Monitor ${tarjetas.estilos}</span></div>
         <div class="cartDesc"><span> ${tarjetas.id} Pulgadas</span></div>

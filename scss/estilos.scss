@@ -326,6 +326,26 @@ body {
   background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000);
 }
 
+.btnCarrito {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /*Para que se posicionen abajo cuando no entran*/
+  flex-direction: row; /*pongo en fila*/
+  justify-content: space-evenly; /*trabaja a nivel de fila la separacion*/
+  background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000);
+
+  button {
+    color: #182e64;
+    text-align: center;
+    font-size: 1.75rem;
+    border-radius: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+
 .caja {
   width: 300px;
   height: 300px;
@@ -384,7 +404,7 @@ body {
   }
 }
 
-.divisionCarrito{
+.divisionCarrito {
   position: absolute;
   width: 100%;
   top: 2em;
@@ -397,8 +417,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   /*Para que se posicionen abajo cuando no entran*/
-  flex-direction: row;  /*pongo en fila*/
-  justify-content: space-evenly;  /*trabaja a nivel de fila la separacion*/
+  flex-direction: row; /*pongo en fila*/
+  justify-content: space-evenly; /*trabaja a nivel de fila la separacion*/
   background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000);
 
   .cartRow {
@@ -410,11 +430,10 @@ body {
     align-items: center;
     color: #fff;
     margin-bottom: 10px;
-    
-    .cartImagen {
 
+    .cartImagen {
       width: 200px;
-      
+
       .tarjetaImagen {
         width: 190px;
         border-radius: 12px;
@@ -427,15 +446,15 @@ body {
 
     .cartTitulo {
       width: 200px;
-      text-align: center;  
-      font-size: 1.75rem    
+      text-align: center;
+      font-size: 1.75rem;
     }
 
     .cartMonto {
       width: 200px;
       text-align: center;
-      font-size: 1.75rem      
-      }
+      font-size: 1.75rem;
+    }
   }
 }
 

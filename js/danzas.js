@@ -51,12 +51,12 @@ const imprimirCarrito = () => {
         const cartRow = document.createElement('div')
         cartRow.className = 'cartRow'
         cartRow.innerHTML = `
-        <div class="cartImg">
-          <img class="tarjetaImagen" src="${tarjetas.imagen}">
+        <div class="cartImagen">
+             <img class="tarjetaImagen" src="${tarjetas.imagen}">
         </div>
-        <div class="cartTitle"><span> Monitor ${tarjetas.estilos}</span></div>
-        <div class="cartDesc"><span> ${tarjetas.id} Pulgadas</span></div>
-        <div class="cartPrice"><span> $${tarjetas.costo}</span></div>
+        <div class="cartTitulo"><span>${tarjetas.estilos}</span></div>
+        <div class="cartMonto"><span>$${tarjetas.costo}</span></div>  
+        <div class="cartMonto"><span>${tarjetas.id}</span></div>  
         `
         crrseleccion.append(cartRow)
     })

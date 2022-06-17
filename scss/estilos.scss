@@ -421,6 +421,40 @@ body {
   justify-content: space-evenly; /*trabaja a nivel de fila la separacion*/
   background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000);
 
+  .cartCabecera {
+    display: flex;
+    border: 1px solid gray;
+    width: 70%;
+    flex-direction: row; 
+    padding: 20px 10px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 10px;
+
+    .cartImagen {
+      width: 200px;
+
+      .tarjetaImagen {
+        width: 190px;
+        text-align: center;
+        font-size: 1.75rem;
+      }
+    }
+
+    .cartTitulo {
+      width: 200px;
+      text-align: center;
+      font-size: 1.75rem;
+    }
+
+    .cartMonto {
+      width: 200px;
+      text-align: center;
+      font-size: 1.75rem;
+    }
+  }
+  
   .cartRow {
     display: flex;
     border: 1px solid gray;
@@ -457,6 +491,22 @@ body {
     }
   }
 }
+
+/////////
+// .crrcabecera {
+//   width: 100%;
+//   height: auto;
+//   display: flex;
+//   flex-wrap: wrap;
+//   /*Para que se posicionen abajo cuando no entran*/
+//   flex-direction: row; /*pongo en fila*/
+//   justify-content: space-evenly; /*trabaja a nivel de fila la separacion*/
+//   background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000);
+
+ 
+// }
+
+///////////
 
 .encabezado {
   display: flex;

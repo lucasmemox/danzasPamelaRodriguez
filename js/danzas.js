@@ -70,6 +70,7 @@ const agregarDanza = (e) => {
   const agregarRender = listado.find((tarjetas) => tarjetas.id ==  claseElegida)
   // Una vez tenemos todo el objeto, lo enviamos al carrito
   console.log(agregarRender)
+  //controlarCarrito()
   carrito.push(agregarRender)
   imprimirCarrito()
   localStorage.setItem('carrito', JSON.stringify(carrito))

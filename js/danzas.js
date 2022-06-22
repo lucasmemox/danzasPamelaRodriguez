@@ -67,22 +67,6 @@ listado.forEach((tarjetas) => {
   console.log(tarjetas);
 });
 
-// const imprimirCabecera = () => {
-//   console.log("Entre ACA");
-//   const cartCabecera = document.createElement("div");
-//   cartCabecera.className = "cartCabecera";
-//   console.log(cartCabecera);
-//   cartCabecera.innerHTML = `
-//         <div class="cartImagen">
-//              <span class="tarjetaImagen"> Descripción</span>
-//         </div>
-//         <div class="cartTitulo"><span>Estilo</span></div>
-//         <div class="cartMonto"><span>Costo</span></div>
-//         <div class="cartMonto"><span>Orden</span></div>
-//         `;
-//   crrcabecera.append(cartCabecera);
-// };
-
 const imprimirCarrito = () => {
   crrseleccion.innerHTML = "";
   console.log("Entre ACA");
@@ -100,7 +84,6 @@ const imprimirCarrito = () => {
   `;
   crrseleccion.append(cartCabecera);
 
-  // crrseleccion.innerHTML = "";
   carrito.forEach((tarjetas) => {
     const cartRow = document.createElement("div");
     cartRow.className = "cartRow";
@@ -114,7 +97,7 @@ const imprimirCarrito = () => {
        
           <div class="cartMonto"><span>$${tarjetas.costo}</span></div>
        
-          <div class="cartMonto"><span>${tarjetas.id}</span></div>
+          <div style="display:none;"><span>${tarjetas.id}</span></div>
         
         `;
     crrseleccion.append(cartRow);
@@ -151,7 +134,8 @@ const agregarDanza = (e) => {
   const agregarRender = listado.find((tarjetas) => tarjetas.id == claseElegida);
   // Una vez tenemos todo el objeto, lo enviamos al carrito
   console.log(agregarRender);
-  //controlarCarrito()
+  //Controlo el Carrito
+  const controlCRR = carrito.find((crr) => crr.id == claseElegida);
 
   carrito.push(agregarRender);
   imprimirCarrito();
@@ -182,127 +166,3 @@ const vaciarCarrito = () => {
 
 const vaciarCarritoBtn = document.querySelector("#vaciarCarrito");
 vaciarCarritoBtn.addEventListener("click", vaciarCarrito);
-
-// FUNCIONES
-
-// console.log("1)  Simulador ");
-// alert("Bienvenidos al Carrito de la Academia de Danzas PTM");
-// alert(
-//   "Indique la letra del curso a comprar - F(Folclore) - E(Español) - J(Jazz)"
-// );
-
-// let nombre = prompt("Ingrese su nombre: ");
-// let curso = prompt("Ingrese la letra del curso: ").toUpperCase();
-
-// let tipo = !isNaN(nombre);
-// console.log(tipo);
-
-// if (tipo == false) {
-//   switch (curso) {
-//     case "F":
-//       let descuentof = descuento("F");
-
-//       alert(
-//         nombre +
-//           " El Profesorador de Folklore cuesta 5000 y con beca " +
-//           descuentof
-//       );
-//       break;
-//     case "E":
-//       let descuentoe = descuento("E");
-//       alert(
-//         nombre +
-//           " El Profesorado de Español cuesta 3500 y con beca " +
-//           descuentoe
-//       );
-//       break;
-//     case "J":
-//       let descuentoj = descuento("J");
-//       alert(
-//         nombre + " El Profesorado de Jazz cuesta 3700 y con beca " + descuentoj
-//       );
-//       break;
-//     case "J":
-//       let descuentol = descuento("L");
-//       alert(
-//         nombre +
-//           " El Profesorado de Ritmos Libres cuesta 3500 y con beca " +
-//           descuentol
-//       );
-//       break;
-//     case "J":
-//       let descuentofu = descuento("FU");
-//       alert(
-//         nombre +
-//           " Entrenamiento funcional cuesta 4000 con descuento " +
-//           descuentofu
-//       );
-//       break;
-//     case "J":
-//       let descuentoc = descuento("C");
-//       alert(
-//         nombre +
-//           " El Profesorado de Danzas Clasicas cuesta 3000 y con beca " +
-//           descuentoc
-//       );
-//       break;
-//     default:
-//       alert("No es un curso valido");
-//       break;
-//   }
-// } else {
-//   alert("No es un nombre valido");
-// }
-
-// function descuento(curso) {
-//   if (curso == "F") {
-//     let monto = 5000;
-//     let descuento = 15;
-
-//     let montodescontado = (monto * descuento) / 100;
-
-//     let total = monto - montodescontado;
-
-//     return total;
-//   } else if (curso == "J") {
-//     let monto = 3700;
-//     let descuento = 10;
-
-//     let montodescontado = (monto * descuento) / 100;
-
-//     let total = monto - montodescontado;
-//     return total;
-//   } else if (curso == "E") {
-//     let monto = 3500;
-//     let descuento = 16;
-
-//     let montodescontado = (monto * descuento) / 100;
-
-//     let total = monto - montodescontado;
-//     return total;
-//   } else if (curso == "C") {
-//     let monto = 3000;
-//     let descuento = 20;
-
-//     let montodescontado = (monto * descuento) / 100;
-
-//     let total = monto - montodescontado;
-//     return total;
-//   } else if (curso == "L") {
-//     let monto = 3500;
-//     let descuento = 20;
-
-//     let montodescontado = (monto * descuento) / 100;
-
-//     let total = monto - montodescontado;
-//     return total;
-//   } else if (curso == "FU") {
-//     let monto = 4000;
-//     let descuento = 10;
-
-//     let montodescontado = (monto * descuento) / 100;
-
-//     let total = monto - montodescontado;
-//     return total;
-//   }
-// }

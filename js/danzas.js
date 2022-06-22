@@ -79,7 +79,7 @@ const imprimirCarrito = () => {
         </div>
         <div class="cartTitulo"><span>Estilo</span></div>
         <div class="cartMonto"><span>Costo</span></div>  
-        <div class="cartMonto"><span>Orden</span></div>
+        <div class="cartMonto"><span>Elección</span></div>
       </div>  
   `;
   crrseleccion.append(cartCabecera);
@@ -98,6 +98,10 @@ const imprimirCarrito = () => {
           <div class="cartMonto"><span>$${tarjetas.costo}</span></div>
        
           <div style="display:none;"><span>${tarjetas.id}</span></div>
+
+          <div class="cartMonto">
+               <button id="quitarCarrito"> <span>Quitar Carrito </span></button>
+          </div>
         
         `;
     crrseleccion.append(cartRow);
@@ -111,17 +115,21 @@ const imprimirCarrito2 = () => {
     cartRow.className = "cartRow";
     cartRow.innerHTML = `
     
-          <div class="cartImagen">
-             <img class="tarjetaImagen" src="${tarjetas.imagen}">
-          </div>
-        
-          <div class="cartTitulo"><span>${tarjetas.estilos}</span></div>
-       
-          <div class="cartMonto"><span>$${tarjetas.costo}</span></div>
-       
-          <div class="cartMonto"><span>${tarjetas.id}</span></div>
-        
+    <div class="cartImagen">
+      <img class="tarjetaImagen" src="${tarjetas.imagen}">
+    </div>
+
+    <div class="cartTitulo"><span>${tarjetas.estilos}</span></div>
+
+    <div class="cartMonto"><span>$${tarjetas.costo}</span></div>
+
+    <div style="display:none;"><span>${tarjetas.id}</span></div>
+
+    <div class="cartMonto">
+        <button id="quitarCarrito"> <span> Quitar </span></button>
+    </div>    
         `;
+
     crrseleccion.append(cartRow);
   });
 };
